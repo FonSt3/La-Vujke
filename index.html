@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>La Vujke Berbernica · Doboj, Derventa, Brod</title>
+<meta name="description" content="La Vujke berbernica — šišanje, brada i stajling u Doboju, Derventi i Brodu. Cjenovnik po nivoima, ekipa i rezervacija termina preko aplikacije." />
+<meta name="theme-color" content="#352c25" />
+<meta property="og:title" content="La Vujke Berbernica" />
+<meta property="og:description" content="Više od dobrog šišanja. Doboj · Derventa · Brod." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23352c25'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Helvetica,sans-serif' font-weight='700' font-size='30' fill='%23f97300'%3ELV%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet" />
+<link rel="preload" as="image" href="./assets/hero-ogledalo.jpg" fetchpriority="high" />
+<script src="./image-slot.js"></script>
+<style>
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: clip; overflow-y: scroll; scrollbar-color: #916133 #241e1a; scrollbar-width: thin; }
+  ::-webkit-scrollbar { width: 11px; }
+  ::-webkit-scrollbar-track { background: #241e1a; }
+  ::-webkit-scrollbar-thumb { background: #916133; border-radius: 0; }
+  ::-webkit-scrollbar-thumb:hover { background: #c08a4e; }
+  [data-track="1"]::-webkit-scrollbar { display: none; }
+  [data-card]:focus-visible { outline: 2px solid #f97300; outline-offset: -2px; }
+  @media (max-width: 1100px) { [data-nowrap-lg], [data-nowrap-lg] span { white-space: normal !important; display: inline !important; } }
+  @media (prefers-reduced-motion: reduce) {
+    [data-media="1"], [data-veil="1"], [data-meta="1"], [data-counter="1"], [data-card], [data-vlabel="1"] { transition: none !important; }
+  }
+  body { margin: 0; background: #352c25; color: #e7e7e5; font-family: Archivo, "Helvetica Neue", Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #e7e7e5; text-decoration: none; }
+  a:hover { color: #c08a4e; }
+  ::selection { background: #916133; color: #e7e7e5; }
+  :focus-visible { outline: 2px solid #f97300; outline-offset: 3px; }
+  [data-js="1"] [data-reveal] { opacity: 0; transform: translateY(26px); transition: opacity .68s cubic-bezier(.16,1,.3,1) var(--d,0ms), transform .68s cubic-bezier(.16,1,.3,1) var(--d,0ms); }
+  [data-js="1"] [data-reveal].in { opacity: 1; transform: none; }
+  [data-js="1"] [data-reveal-img] { clip-path: inset(100% 0 0 0); transition: clip-path .95s cubic-bezier(.16,1,.3,1); }
+  [data-js="1"] [data-reveal-img].in { clip-path: inset(0 0 0 0); }
+  [data-js="1"] [data-rule] { transform: scaleX(0); transform-origin: left; transition: transform .7s cubic-bezier(.16,1,.3,1) var(--d,0ms); }
+  [data-js="1"] [data-rule].in { transform: scaleX(1); }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    [data-js="1"] [data-reveal], [data-js="1"] [data-reveal-img], [data-js="1"] [data-rule] { opacity: 1 !important; transform: none !important; clip-path: none !important; transition: none !important; }
+  }
+</style>
+</helmet>
+
+<template id="__bundler_thumbnail">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="200" height="200" fill="#352c25" />
+    <text x="100" y="118" text-anchor="middle" font-family="Archivo, Helvetica, sans-serif" font-weight="700" font-size="56" fill="#f97300">LV</text>
+  </svg>
+</template>
+
+<div style="background: #352c25; min-height: 100vh">
+
+  <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 90; background: rgba(53,44,37,.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(145,97,51,.28)">
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px clamp(20px, 4vw, 56px)">
+      <a href="#pocetna" style="display: flex; align-items: center; gap: 12px; flex-shrink: 0">
+        <span style="display: block; flex: 0 0 36px; width: 36px; height: 36px"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="logo-mark" shape="circle" placeholder="LOGO"></image-slot></span>
+        <span style="font-size: 19px; font-weight: 700; letter-spacing: .1em; color: #e7e7e5">LA VUJKE</span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; letter-spacing: .22em; color: #c08a4e; text-transform: uppercase">berbernica</span>
+      </a>
+
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <nav aria-label="Glavna navigacija" style="display: flex; align-items: center; gap: clamp(18px, 2.4vw, 38px)">
+          <a href="#usluge" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .2em; color: #B8B5B0; padding: 6px 0; border-bottom: 1px solid transparent" style-hover="color: #e7e7e5; border-bottom-color: #c08a4e">USLUGE</a>
+          <a href="#radovi" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .2em; color: #B8B5B0; padding: 6px 0; border-bottom: 1px solid transparent" style-hover="color: #e7e7e5; border-bottom-color: #c08a4e">RADOVI</a>
+          <a href="#o-nama" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .2em; color: #B8B5B0; padding: 6px 0; border-bottom: 1px solid transparent" style-hover="color: #e7e7e5; border-bottom-color: #c08a4e">O NAMA</a>
+          <a href="#zasto" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .2em; color: #B8B5B0; padding: 6px 0; border-bottom: 1px solid transparent" style-hover="color: #e7e7e5; border-bottom-color: #c08a4e">RECENZIJE</a>
+          <a href="#lokacije" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .2em; color: #B8B5B0; padding: 6px 0; border-bottom: 1px solid transparent" style-hover="color: #e7e7e5; border-bottom-color: #c08a4e">KONTAKT</a>
+          <a href="{{ storeUrl }}" onClick="{{ book }}" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; color: #241e1a; background: #f97300; padding: 13px 22px; border-radius: 2px; font-weight: 500" style-hover="background: #ff8a1f; color: #241e1a">REZERVIŠI TERMIN</a>
+        </nav>
+      </sc-if>
+
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Otvori meni" style="display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 48px; height: 48px; padding: 0 12px; background: none; border: 1px solid rgba(145,97,51,.4); border-radius: 2px; cursor: pointer">
+          <span style="display: block; height: 1px; background: #e7e7e5"></span>
+          <span style="display: block; height: 1px; background: #e7e7e5"></span>
+        </button>
+      </sc-if>
+    </div>
+  </header>
+
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position: fixed; inset: 0; z-index: 95; background: #352c25; display: flex; flex-direction: column; padding: 20px">
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 4px 40px">
+        <span style="font-size: 19px; font-weight: 700; letter-spacing: .1em">LA VUJKE</span>
+        <button onClick="{{ toggleMenu }}" aria-label="Zatvori meni" style="width: 48px; height: 48px; background: none; border: 1px solid rgba(145,97,51,.4); border-radius: 2px; color: #e7e7e5; font-size: 20px; cursor: pointer; line-height: 1">×</button>
+      </div>
+      <nav aria-label="Mobilna navigacija" style="display: flex; flex-direction: column; gap: 2px; flex: 1">
+        <a href="#usluge" onClick="{{ closeMenu }}" style="font-size: 34px; font-weight: 600; letter-spacing: -.02em; padding: 14px 4px; border-bottom: 1px solid rgba(145,97,51,.2)">USLUGE</a>
+        <a href="#radovi" onClick="{{ closeMenu }}" style="font-size: 34px; font-weight: 600; letter-spacing: -.02em; padding: 14px 4px; border-bottom: 1px solid rgba(145,97,51,.2)">RADOVI</a>
+        <a href="#o-nama" onClick="{{ closeMenu }}" style="font-size: 34px; font-weight: 600; letter-spacing: -.02em; padding: 14px 4px; border-bottom: 1px solid rgba(145,97,51,.2)">O NAMA</a>
+        <a href="#zasto" onClick="{{ closeMenu }}" style="font-size: 34px; font-weight: 600; letter-spacing: -.02em; padding: 14px 4px; border-bottom: 1px solid rgba(145,97,51,.2)">RECENZIJE</a>
+        <a href="#lokacije" onClick="{{ closeMenu }}" style="font-size: 34px; font-weight: 600; letter-spacing: -.02em; padding: 14px 4px; border-bottom: 1px solid rgba(145,97,51,.2)">KONTAKT</a>
+      </nav>
+      <a href="{{ storeUrl }}" target="_blank" rel="noopener" onClick="{{ closeMenu }}" style="display: block; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: .16em; color: #241e1a; background: #f97300; padding: 22px; border-radius: 2px; margin-top: 24px">REZERVIŠI TERMIN</a>
+    </div>
+  </sc-if>
+
+  <main>
+
+      <section id="pocetna" style="position: relative; min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; background: #241e1a; scroll-margin-top: 80px">
+        <div style="position: absolute; inset: 0; display: flex; align-items: flex-end">
+          <div aria-hidden="true" style="position: absolute; inset: 0; background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAASACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAQFAQMH/8QAJRAAAgEDAwQCAwAAAAAAAAAAAQIRAAMhBBIxEyJBcWGBMlGR/8QAFwEBAQEBAAAAAAAAAAAAAAAAAgMAAf/EABsRAAMAAgMAAAAAAAAAAAAAAAABAhExMjNB/9oADAMBAAIRAxEAPwDnZIKHOaa6DpaDGFBUMZ5gif5SjrtwGDeq2o29VRrqovMwfA4wPr7oNCTwMtbFm2bhtoVLqQSSWK9wMEdsfPOBHmlCVO+MSMCaoa2/orukA0+nIuqAOp1WZoH7BWIyBA+KlkkDkitKO0xnQKrOQyg48j1VHVIgS2oVYgmI9UUUK5otHWyYAJXA/Cs6kBbx2iOOKKKfpJaP/9k='); background-size: cover; background-position: 57% 45%; filter: blur(18px) brightness(.8) saturate(.95); transform: scale(1.08)"></div>
+          <img src="./assets/hero-ogledalo.jpg" alt="Barber u radu, kadar kroz ogledalo" fetchpriority="high" decoding="async" style="position: relative; width: 100%; height: min(100%, 165vw); object-fit: cover; object-position: clamp(50%, (700px - 100vw) * 999, 57%) 45%; display: block; -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 12%); mask-image: linear-gradient(180deg, transparent 0%, #000 12%)" />
+        </div>
+        <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(36,30,26,.78) 0%, rgba(36,30,26,.18) 30%, rgba(36,30,26,.45) 58%, rgba(36,30,26,.82) 100%)"></div>
+
+        <div aria-hidden="true" style="position: absolute; top: 96px; left: clamp(20px, 4vw, 56px); right: clamp(20px, 4vw, 56px); display: flex; justify-content: space-between; gap: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .2em; color: #cfcac4; pointer-events: none">
+          <span>DERVENTA · DOBOJ · BROD</span>
+          <span style="color: #c08a4e">EST. 2019</span>
+        </div>
+
+        <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+          <span aria-hidden="true" style="position: absolute; right: 22px; top: 50%; transform: translateY(-50%); writing-mode: vertical-rl; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .34em; color: rgba(231,231,229,.5)">LA VUJKE BERBERNICA</span>
+        </sc-if>
+
+        <div style="position: relative; padding: 0 clamp(20px, 4vw, 56px) clamp(48px, 6vw, 88px); max-width: 1600px; width: 100%">
+          <h1 style="margin: 0; font-weight: 700; font-size: clamp(30px, 6.6vw, 132px); line-height: 1.04; letter-spacing: -.02em; color: #e7e7e5; text-wrap: balance">
+            <span data-reveal style="display: block; white-space: nowrap">DOBAR STIL</span>
+            <span data-reveal style="--d: 110ms; display: block; padding-left: clamp(0px, 6vw, 130px); white-space: nowrap; color: #241e1a; -webkit-text-stroke: clamp(2px, .34vw, 5px) #f97300; paint-order: stroke fill">NIJE SLUČAJNOST.</span>
+          </h1>
+          <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: clamp(24px, 4vw, 64px); margin-top: clamp(28px, 4vw, 52px)">
+            <div data-reveal style="--d: 280ms; display: flex; flex-wrap: wrap; gap: 12px; margin-left: auto">
+              <a href="{{ storeUrl }}" onClick="{{ book }}" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .16em; color: #241e1a; background: #f97300; padding: 19px 34px; border-radius: 2px; font-weight: 500" style-hover="background: #ff8a1f">REZERVIŠI TERMIN</a>
+              <a href="#usluge" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .16em; color: #e7e7e5; border: 1px solid #916133; padding: 19px 34px; border-radius: 2px" style-hover="border-color: #e7e7e5; color: #e7e7e5">POGLEDAJ USLUGE</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <section style="padding: clamp(80px, 10vw, 170px) clamp(20px, 4vw, 56px); border-bottom: 1px solid rgba(145,97,51,.22)">
+      <div style="max-width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: clamp(32px, 5vw, 96px)">
+
+        <div style="flex: 1 1 560px; min-width: 280px">
+          <p data-reveal style="margin: 0 0 clamp(18px, 2vw, 28px); font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .26em; color: #c08a4e">RIJEČ VLASNIKA</p>
+          <p data-reveal style="--d: 60ms; margin: 0 0 clamp(20px, 2.4vw, 32px); font-weight: 600; font-size: clamp(24px, 3.4vw, 52px); line-height: 1.1; letter-spacing: -.03em; text-wrap: balance">Frizura je prvo što ljudi vide.</p>
+          <p data-reveal style="--d: 120ms; margin: 0 0 20px; font-size: 16px; line-height: 1.7; color: #B8B5B0" data-nowrap-lg="1"><span style="display: block; white-space: nowrap">Zato radim samo ono što bih dao sebi. Ako nije dovoljno dobro za mene,</span><span style="display: block; white-space: nowrap">ne izlazi iz moje stolice. Zato se ljudi i vraćaju kod nas sedam godina.</span></p>
+          <p data-reveal style="--d: 180ms; margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #c08a4e">DARIO VUJIČIĆ · VUJKE</p>
+        </div>
+
+        <div style="flex: 1 1 340px; min-width: 260px; display: flex; flex-direction: column; justify-content: center; gap: clamp(14px, 1.8vw, 22px)">
+          <p data-reveal style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .22em; color: #a39a92">ŠTA TO ZNAČI U PRAKSI</p>
+          <p data-reveal style="--d: 60ms; margin: 0; display: flex; gap: 14px; align-items: baseline; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.45; font-weight: 500"><span style="color: #c08a4e">—</span><span>Pitamo prije nego uzmemo mašinicu.</span></p>
+          <p data-reveal style="--d: 110ms; margin: 0; display: flex; gap: 14px; align-items: baseline; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.45; font-weight: 500"><span style="color: #c08a4e">—</span><span>Kažemo ti ako nešto neće stajati.</span></p>
+          <p data-reveal style="--d: 160ms; margin: 0; display: flex; gap: 14px; align-items: baseline; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.45; font-weight: 500"><span style="color: #c08a4e">—</span><span>Detalj se radi na kraju, ne u žurbi.</span></p>
+          <p data-reveal style="--d: 210ms; margin: 0; display: flex; gap: 14px; align-items: baseline; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.45; font-weight: 500"><span style="color: #c08a4e">—</span><span>Nema žurbe dok ne bude kako treba.</span></p>
+          <p data-reveal style="--d: 260ms; margin: 0; display: flex; gap: 14px; align-items: baseline; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.45; font-weight: 500"><span style="color: #f97300">—</span><span>Isti rad na sve tri lokacije.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="usluge" style="background: #ded2c0; color: #352c25; padding: clamp(72px, 9vw, 150px) clamp(20px, 4vw, 56px); scroll-margin-top: 80px">
+      <div style="max-width: 1500px; margin: 0 auto">
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 28px; margin-bottom: clamp(40px, 5vw, 72px)">
+          <div>
+            <p data-reveal style="margin: 0 0 18px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .26em; color: #7a5029">USLUGE</p>
+            <h2 data-reveal style="--d: 80ms; margin: 0; font-weight: 700; font-size: clamp(30px, 6.6vw, 96px); line-height: .94; letter-spacing: -.035em; white-space: nowrap" data-nowrap-lg="1">DETALJI PRAVE RAZLIKU.</h2>
+          </div>
+          <p data-reveal style="--d: 160ms; margin: 0; font-size: 15px; line-height: 1.65; color: #5b5049; white-space: nowrap" data-nowrap-lg="1">Trajanje i cijena zavise od nivoa barbera kojeg izabereš u aplikaciji.</p>
+        </div>
+
+          <div style="border-top: 1px solid rgba(145,97,51,.45)">
+            <sc-for list="{{ services }}" as="s" hint-placeholder-count="10">
+              <a href="{{ storeUrl }}" onClick="{{ book }}" target="_blank" rel="noopener" data-reveal style="display: flex; flex-wrap: wrap; align-items: center; gap: clamp(12px, 2vw, 32px); padding: clamp(20px, 2.4vw, 34px) 8px; border-bottom: 1px solid rgba(145,97,51,.35); color: #352c25" style-hover="background: rgba(145,97,51,.14); padding-left: 22px; color: #352c25">
+                <span style="flex: 0 0 44px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .16em; color: #7a5029">{{ s.num }}</span>
+                <span style="flex: 1 1 220px; font-weight: 600; font-size: clamp(22px, 2.6vw, 40px); letter-spacing: -.025em; line-height: 1.05">{{ s.name }}</span>
+                <span style="flex: 1 1 240px; font-size: 14.5px; line-height: 1.55; color: #5b5049">{{ s.desc }}</span>
+                <sc-if value="{{ s.tiers }}" hint-placeholder-val="{{ true }}">
+                <span style="flex: 0 0 auto; display: flex; flex-wrap: nowrap; align-items: flex-start; gap: clamp(12px, 1.4vw, 24px); margin-left: auto">
+                  <span style="display: flex; flex-direction: column; gap: 4px; min-width: 76px; text-align: right">
+                    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #564b42">BARBER</span>
+                    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: .04em; font-weight: 500; color: #352c25">{{ s.p1 }}</span>
+                    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .1em; color: #564b42">{{ s.d1 }}</span>
+                  </span>
+                  <span style="display: flex; flex-direction: column; gap: 4px; min-width: 76px; text-align: right">
+                    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #564b42">MASTER</span>
+                    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: .04em; font-weight: 500; color: #7a5029">{{ s.p2 }}</span>
+                    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .1em; color: #564b42">{{ s.d2 }}</span>
+                  </span>
+                  <span style="display: flex; flex-direction: column; gap: 4px; min-width: 76px; text-align: right">
+                    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #564b42">EDUKATOR</span>
+                    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: .04em; font-weight: 500; color: #8f3d00">{{ s.p3 }}</span>
+                    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .1em; color: #564b42">{{ s.d3 }}</span>
+                  </span>
+                </span>
+                </sc-if>
+                <sc-if value="{{ s.single }}" hint-placeholder-val="{{ false }}">
+                  <span style="flex: 0 0 auto; display: flex; flex-wrap: nowrap; align-items: flex-start; gap: clamp(12px, 1.4vw, 24px); margin-left: auto">
+                    <span aria-hidden="true" style="min-width: 76px"></span>
+                    <span style="display: flex; flex-direction: column; gap: 4px; min-width: 76px; text-align: right">
+                      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #564b42">CIJENA</span>
+                      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: .04em; font-weight: 500; color: #7a5029">{{ s.p1 }}</span>
+                      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .1em; color: #564b42">{{ s.d1 }}</span>
+                      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .1em; color: #7a5029">{{ s.note }}</span>
+                    </span>
+                    <span aria-hidden="true" style="min-width: 76px"></span>
+                  </span>
+                </sc-if>
+              </a>
+            </sc-for>
+          </div>
+
+
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; margin-top: clamp(36px, 4vw, 60px)">
+          <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .18em; color: #564b42">TRAJANJA I CIJENE PO NIVOU BARBERA · UNESI STVARNE PODATKE</p>
+          <a href="{{ storeUrl }}" onClick="{{ book }}" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .16em; color: #241e1a; background: #f97300; padding: 19px 34px; border-radius: 2px; font-weight: 500" style-hover="background: #ff8a1f; color: #241e1a">REZERVIŠI TERMIN</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="radovi" style="background: #241e1a; padding: clamp(72px, 9vw, 150px) 0; scroll-margin-top: 80px; overflow: hidden">
+      <div style="max-width: 1500px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px)">
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 28px; margin-bottom: clamp(36px, 4vw, 60px)">
+          <div>
+            <p data-reveal style="margin: 0 0 18px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .26em; color: #c08a4e">NAŠI RADOVI</p>
+            <h2 data-reveal style="--d: 80ms; margin: 0; font-weight: 700; font-size: clamp(28px, 5vw, 62px); line-height: 1; letter-spacing: -.03em; white-space: nowrap" data-nowrap-lg="1">PRECIZNOST U SVAKOM DETALJU.</h2>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px">
+            <p data-reveal style="--d: 160ms; margin: 0; font-size: 15.5px; line-height: 1.65; color: #B8B5B0; white-space: nowrap" data-nowrap-lg="1">Šišanja, fadeovi, brada i transformacije, birano iz arhiva.</p>
+          </div>
+        </div>
+      </div>
+
+      <div data-lookbook="1" style="position: relative; padding: 0 clamp(20px, 4vw, 56px)">
+        <p data-hint="1" data-reveal style="margin: 0 0 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .24em; color: #c08a4e">PREĐI MIŠEM DA OTKRIJEŠ</p>
+        <div data-track="1" style="display: flex; height: clamp(420px, 64vh, 760px); overflow: hidden; border: 1px solid rgba(145,97,51,.28); overscroll-behavior-x: contain; scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch">
+          <div role="button" tabindex="0" onClick="{{ zoom1 }}" aria-label="LOW TAPER, uvećaj sliku" data-card="01" data-reveal style="--d: 0ms; position: relative; display: block; cursor: zoom-in; flex: 1 1 0%; min-width: 0; height: 100%; overflow: hidden; background: #2b241f; border-right: 1px solid rgba(36,30,26,.9); transition: flex-grow .55s cubic-bezier(.16,1,.3,1)">
+            <div data-media="1" style="position: absolute; inset: 0; filter: grayscale(1) contrast(1.05) brightness(.82); transition: filter .45s cubic-bezier(.16,1,.3,1)">
+              <image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.28); outline-offset: -1px" id="w-1" shape="rect" src="./assets/gal-taper.jpg" placeholder="LOW TAPER"></image-slot>
+            </div>
+            <span aria-hidden="true" data-veil="1" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36,30,26,.34) 0%, rgba(36,30,26,.1) 40%, rgba(36,30,26,.86) 100%); opacity: .92; transition: opacity .45s cubic-bezier(.16,1,.3,1); pointer-events: none"></span>
+            <span data-num="1" style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #e7e7e5; pointer-events: none">01</span>
+            <span data-vlabel="1" style="position: absolute; left: 14px; bottom: 16px; writing-mode: vertical-rl; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #cfcac4; opacity: 1; transition: opacity .3s ease; pointer-events: none">LOW TAPER</span>
+            <span data-meta="1" style="position: absolute; inset: auto 0 0 0; display: flex; flex-direction: column; gap: 6px; padding: clamp(16px, 1.8vw, 28px); transform: translateY(12px); opacity: 0; transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .4s ease; pointer-events: none">
+              <span style="font-weight: 600; font-size: clamp(19px, 1.8vw, 28px); letter-spacing: -.02em; line-height: 1.06; color: #e7e7e5; white-space: nowrap">LOW TAPER</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #cfcac4; white-space: nowrap">Taper fade · Teksturirani vrh</span>
+            </span>
+          </div>
+          <div role="button" tabindex="0" onClick="{{ zoom2 }}" aria-label="MID FADE, uvećaj sliku" data-card="02" data-reveal style="--d: 60ms; position: relative; display: block; cursor: zoom-in; flex: 1 1 0%; min-width: 0; height: 100%; overflow: hidden; background: #2b241f; border-right: 1px solid rgba(36,30,26,.9); transition: flex-grow .55s cubic-bezier(.16,1,.3,1)">
+            <div data-media="1" style="position: absolute; inset: 0; filter: grayscale(1) contrast(1.05) brightness(.82); transition: filter .45s cubic-bezier(.16,1,.3,1)">
+              <image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.28); outline-offset: -1px" id="w-2" shape="rect" src="./assets/gal-fade.jpg" placeholder="MID FADE"></image-slot>
+            </div>
+            <span aria-hidden="true" data-veil="1" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36,30,26,.34) 0%, rgba(36,30,26,.1) 40%, rgba(36,30,26,.86) 100%); opacity: .92; transition: opacity .45s cubic-bezier(.16,1,.3,1); pointer-events: none"></span>
+            <span data-num="1" style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #e7e7e5; pointer-events: none">02</span>
+            <span data-vlabel="1" style="position: absolute; left: 14px; bottom: 16px; writing-mode: vertical-rl; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #cfcac4; opacity: 1; transition: opacity .3s ease; pointer-events: none">MID FADE</span>
+            <span data-meta="1" style="position: absolute; inset: auto 0 0 0; display: flex; flex-direction: column; gap: 6px; padding: clamp(16px, 1.8vw, 28px); transform: translateY(12px); opacity: 0; transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .4s ease; pointer-events: none">
+              <span style="font-weight: 600; font-size: clamp(19px, 1.8vw, 28px); letter-spacing: -.02em; line-height: 1.06; color: #e7e7e5; white-space: nowrap">MID FADE</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #cfcac4; white-space: nowrap">Čist prelaz · Definisana kontura</span>
+            </span>
+          </div>
+          <div role="button" tabindex="0" onClick="{{ zoom3 }}" aria-label="SKIN FADE, uvećaj sliku" data-card="03" data-reveal style="--d: 120ms; position: relative; display: block; cursor: zoom-in; flex: 1 1 0%; min-width: 0; height: 100%; overflow: hidden; background: #2b241f; border-right: 1px solid rgba(36,30,26,.9); transition: flex-grow .55s cubic-bezier(.16,1,.3,1)">
+            <div data-media="1" style="position: absolute; inset: 0; filter: grayscale(1) contrast(1.05) brightness(.82); transition: filter .45s cubic-bezier(.16,1,.3,1)">
+              <image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.28); outline-offset: -1px" id="w-3" shape="rect" src="./assets/gal-skin.jpg" placeholder="SKIN FADE"></image-slot>
+            </div>
+            <span aria-hidden="true" data-veil="1" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36,30,26,.34) 0%, rgba(36,30,26,.1) 40%, rgba(36,30,26,.86) 100%); opacity: .92; transition: opacity .45s cubic-bezier(.16,1,.3,1); pointer-events: none"></span>
+            <span data-num="1" style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #e7e7e5; pointer-events: none">03</span>
+            <span data-vlabel="1" style="position: absolute; left: 14px; bottom: 16px; writing-mode: vertical-rl; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #cfcac4; opacity: 1; transition: opacity .3s ease; pointer-events: none">SKIN FADE</span>
+            <span data-meta="1" style="position: absolute; inset: auto 0 0 0; display: flex; flex-direction: column; gap: 6px; padding: clamp(16px, 1.8vw, 28px); transform: translateY(12px); opacity: 0; transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .4s ease; pointer-events: none">
+              <span style="font-weight: 600; font-size: clamp(19px, 1.8vw, 28px); letter-spacing: -.02em; line-height: 1.06; color: #e7e7e5; white-space: nowrap">SKIN FADE</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #cfcac4; white-space: nowrap">Do kože · Oštra linija</span>
+            </span>
+          </div>
+          <div role="button" tabindex="0" onClick="{{ zoom4 }}" aria-label="BRADA, uvećaj sliku" data-card="04" data-reveal style="--d: 180ms; position: relative; display: block; cursor: zoom-in; flex: 1 1 0%; min-width: 0; height: 100%; overflow: hidden; background: #2b241f; border-right: 1px solid rgba(36,30,26,.9); transition: flex-grow .55s cubic-bezier(.16,1,.3,1)">
+            <div data-media="1" style="position: absolute; inset: 0; filter: grayscale(1) contrast(1.05) brightness(.82); transition: filter .45s cubic-bezier(.16,1,.3,1)">
+              <image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.28); outline-offset: -1px" id="w-4" shape="rect" src="./assets/gal-brada2.jpg" placeholder="BRADA"></image-slot>
+            </div>
+            <span aria-hidden="true" data-veil="1" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36,30,26,.34) 0%, rgba(36,30,26,.1) 40%, rgba(36,30,26,.86) 100%); opacity: .92; transition: opacity .45s cubic-bezier(.16,1,.3,1); pointer-events: none"></span>
+            <span data-num="1" style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #e7e7e5; pointer-events: none">04</span>
+            <span data-vlabel="1" style="position: absolute; left: 14px; bottom: 16px; writing-mode: vertical-rl; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #cfcac4; opacity: 1; transition: opacity .3s ease; pointer-events: none">BRADA</span>
+            <span data-meta="1" style="position: absolute; inset: auto 0 0 0; display: flex; flex-direction: column; gap: 6px; padding: clamp(16px, 1.8vw, 28px); transform: translateY(12px); opacity: 0; transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .4s ease; pointer-events: none">
+              <span style="font-weight: 600; font-size: clamp(19px, 1.8vw, 28px); letter-spacing: -.02em; line-height: 1.06; color: #e7e7e5; white-space: nowrap">BRADA</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #cfcac4; white-space: nowrap">Oblikovanje · Britva i topli peškir</span>
+            </span>
+          </div>
+          <div role="button" tabindex="0" onClick="{{ zoom5 }}" aria-label="CREW CUT, uvećaj sliku" data-card="05" data-reveal style="--d: 240ms; position: relative; display: block; cursor: zoom-in; flex: 1 1 0%; min-width: 0; height: 100%; overflow: hidden; background: #2b241f; border-right: 1px solid rgba(36,30,26,.9); transition: flex-grow .55s cubic-bezier(.16,1,.3,1)">
+            <div data-media="1" style="position: absolute; inset: 0; filter: grayscale(1) contrast(1.05) brightness(.82); transition: filter .45s cubic-bezier(.16,1,.3,1)">
+              <image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.28); outline-offset: -1px" id="w-5" shape="rect" src="./assets/gal-crew.jpg" placeholder="CREW CUT"></image-slot>
+            </div>
+            <span aria-hidden="true" data-veil="1" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36,30,26,.34) 0%, rgba(36,30,26,.1) 40%, rgba(36,30,26,.86) 100%); opacity: .92; transition: opacity .45s cubic-bezier(.16,1,.3,1); pointer-events: none"></span>
+            <span data-num="1" style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #e7e7e5; pointer-events: none">05</span>
+            <span data-vlabel="1" style="position: absolute; left: 14px; bottom: 16px; writing-mode: vertical-rl; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #cfcac4; opacity: 1; transition: opacity .3s ease; pointer-events: none">CREW CUT</span>
+            <span data-meta="1" style="position: absolute; inset: auto 0 0 0; display: flex; flex-direction: column; gap: 6px; padding: clamp(16px, 1.8vw, 28px); transform: translateY(12px); opacity: 0; transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .4s ease; pointer-events: none">
+              <span style="font-weight: 600; font-size: clamp(19px, 1.8vw, 28px); letter-spacing: -.02em; line-height: 1.06; color: #e7e7e5; white-space: nowrap">CREW CUT</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #cfcac4; white-space: nowrap">Kratko · Muževno · Bez održavanja</span>
+            </span>
+          </div>
+          <div role="button" tabindex="0" onClick="{{ zoom6 }}" aria-label="TEXTURED CROP, uvećaj sliku" data-card="06" data-reveal style="--d: 300ms; position: relative; display: block; cursor: zoom-in; flex: 1 1 0%; min-width: 0; height: 100%; overflow: hidden; background: #2b241f; border-right: 1px solid rgba(36,30,26,.9); transition: flex-grow .55s cubic-bezier(.16,1,.3,1)">
+            <div data-media="1" style="position: absolute; inset: 0; filter: grayscale(1) contrast(1.05) brightness(.82); transition: filter .45s cubic-bezier(.16,1,.3,1)">
+              <image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.28); outline-offset: -1px" id="w-6" shape="rect" src="./assets/gal-crop.jpg" placeholder="TEXTURED CROP"></image-slot>
+            </div>
+            <span aria-hidden="true" data-veil="1" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36,30,26,.34) 0%, rgba(36,30,26,.1) 40%, rgba(36,30,26,.86) 100%); opacity: .92; transition: opacity .45s cubic-bezier(.16,1,.3,1); pointer-events: none"></span>
+            <span data-num="1" style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #e7e7e5; pointer-events: none">06</span>
+            <span data-vlabel="1" style="position: absolute; left: 14px; bottom: 16px; writing-mode: vertical-rl; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #cfcac4; opacity: 1; transition: opacity .3s ease; pointer-events: none">TEXTURED CROP</span>
+            <span data-meta="1" style="position: absolute; inset: auto 0 0 0; display: flex; flex-direction: column; gap: 6px; padding: clamp(16px, 1.8vw, 28px); transform: translateY(12px); opacity: 0; transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .4s ease; pointer-events: none">
+              <span style="font-weight: 600; font-size: clamp(19px, 1.8vw, 28px); letter-spacing: -.02em; line-height: 1.06; color: #e7e7e5; white-space: nowrap">TEXTURED CROP</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #cfcac4; white-space: nowrap">Teksturirani vrh · Blago tapered</span>
+            </span>
+          </div>
+          <div role="button" tabindex="0" onClick="{{ zoom7 }}" aria-label="BUZZ CUT, uvećaj sliku" data-card="07" data-reveal style="--d: 360ms; position: relative; display: block; cursor: zoom-in; flex: 1 1 0%; min-width: 0; height: 100%; overflow: hidden; background: #2b241f; border-right: 1px solid rgba(36,30,26,.9); transition: flex-grow .55s cubic-bezier(.16,1,.3,1)">
+            <div data-media="1" style="position: absolute; inset: 0; filter: grayscale(1) contrast(1.05) brightness(.82); transition: filter .45s cubic-bezier(.16,1,.3,1)">
+              <image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.28); outline-offset: -1px" id="w-7" shape="rect" placeholder="BUZZ CUT"></image-slot>
+            </div>
+            <span aria-hidden="true" data-veil="1" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36,30,26,.34) 0%, rgba(36,30,26,.1) 40%, rgba(36,30,26,.86) 100%); opacity: .92; transition: opacity .45s cubic-bezier(.16,1,.3,1); pointer-events: none"></span>
+            <span data-num="1" style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #e7e7e5; pointer-events: none">07</span>
+            <span data-vlabel="1" style="position: absolute; left: 14px; bottom: 16px; writing-mode: vertical-rl; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #cfcac4; opacity: 1; transition: opacity .3s ease; pointer-events: none">BUZZ CUT</span>
+            <span data-meta="1" style="position: absolute; inset: auto 0 0 0; display: flex; flex-direction: column; gap: 6px; padding: clamp(16px, 1.8vw, 28px); transform: translateY(12px); opacity: 0; transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .4s ease; pointer-events: none">
+              <span style="font-weight: 600; font-size: clamp(19px, 1.8vw, 28px); letter-spacing: -.02em; line-height: 1.06; color: #e7e7e5; white-space: nowrap">BUZZ CUT</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #cfcac4; white-space: nowrap">Jedna dužina · Precizna kontura</span>
+            </span>
+          </div>
+          <div role="button" tabindex="0" onClick="{{ zoom8 }}" aria-label="KREATIVNO ŠIŠANJE, uvećaj sliku" data-card="08" data-reveal style="--d: 420ms; position: relative; display: block; cursor: zoom-in; flex: 1 1 0%; min-width: 0; height: 100%; overflow: hidden; background: #2b241f; border-right: 1px solid rgba(36,30,26,.9); transition: flex-grow .55s cubic-bezier(.16,1,.3,1)">
+            <div data-media="1" style="position: absolute; inset: 0; filter: grayscale(1) contrast(1.05) brightness(.82); transition: filter .45s cubic-bezier(.16,1,.3,1)">
+              <image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.28); outline-offset: -1px" id="w-8" shape="rect" placeholder="KREATIVNO ŠIŠANJE"></image-slot>
+            </div>
+            <span aria-hidden="true" data-veil="1" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36,30,26,.34) 0%, rgba(36,30,26,.1) 40%, rgba(36,30,26,.86) 100%); opacity: .92; transition: opacity .45s cubic-bezier(.16,1,.3,1); pointer-events: none"></span>
+            <span data-num="1" style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #e7e7e5; pointer-events: none">08</span>
+            <span data-vlabel="1" style="position: absolute; left: 14px; bottom: 16px; writing-mode: vertical-rl; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #cfcac4; opacity: 1; transition: opacity .3s ease; pointer-events: none">KREATIVNO ŠIŠANJE</span>
+            <span data-meta="1" style="position: absolute; inset: auto 0 0 0; display: flex; flex-direction: column; gap: 6px; padding: clamp(16px, 1.8vw, 28px); transform: translateY(12px); opacity: 0; transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .4s ease; pointer-events: none">
+              <span style="font-weight: 600; font-size: clamp(19px, 1.8vw, 28px); letter-spacing: -.02em; line-height: 1.06; color: #e7e7e5; white-space: nowrap">KREATIVNO ŠIŠANJE</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #cfcac4; white-space: nowrap">Dizajn · Linije · Vlastita ideja</span>
+            </span>
+          </div>
+          <div role="button" tabindex="0" onClick="{{ zoom9 }}" aria-label="ŠIŠANJE + BRADA, uvećaj sliku" data-card="09" data-reveal style="--d: 480ms; position: relative; display: block; cursor: zoom-in; flex: 1 1 0%; min-width: 0; height: 100%; overflow: hidden; background: #2b241f; border-right: 1px solid rgba(36,30,26,.9); transition: flex-grow .55s cubic-bezier(.16,1,.3,1)">
+            <div data-media="1" style="position: absolute; inset: 0; filter: grayscale(1) contrast(1.05) brightness(.82); transition: filter .45s cubic-bezier(.16,1,.3,1)">
+              <image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.28); outline-offset: -1px" id="w-9" shape="rect" placeholder="ŠIŠANJE + BRADA"></image-slot>
+            </div>
+            <span aria-hidden="true" data-veil="1" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36,30,26,.34) 0%, rgba(36,30,26,.1) 40%, rgba(36,30,26,.86) 100%); opacity: .92; transition: opacity .45s cubic-bezier(.16,1,.3,1); pointer-events: none"></span>
+            <span data-num="1" style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #e7e7e5; pointer-events: none">09</span>
+            <span data-vlabel="1" style="position: absolute; left: 14px; bottom: 16px; writing-mode: vertical-rl; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #cfcac4; opacity: 1; transition: opacity .3s ease; pointer-events: none">ŠIŠANJE + BRADA</span>
+            <span data-meta="1" style="position: absolute; inset: auto 0 0 0; display: flex; flex-direction: column; gap: 6px; padding: clamp(16px, 1.8vw, 28px); transform: translateY(12px); opacity: 0; transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .4s ease; pointer-events: none">
+              <span style="font-weight: 600; font-size: clamp(19px, 1.8vw, 28px); letter-spacing: -.02em; line-height: 1.06; color: #e7e7e5; white-space: nowrap">ŠIŠANJE + BRADA</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #cfcac4; white-space: nowrap">Kompletna transformacija</span>
+            </span>
+          </div>
+          <div role="button" tabindex="0" onClick="{{ zoom10 }}" aria-label="STAJLING, uvećaj sliku" data-card="10" data-reveal style="--d: 540ms; position: relative; display: block; cursor: zoom-in; flex: 1 1 0%; min-width: 0; height: 100%; overflow: hidden; background: #2b241f; border-right: 1px solid rgba(36,30,26,.9); transition: flex-grow .55s cubic-bezier(.16,1,.3,1)">
+            <div data-media="1" style="position: absolute; inset: 0; filter: grayscale(1) contrast(1.05) brightness(.82); transition: filter .45s cubic-bezier(.16,1,.3,1)">
+              <image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.28); outline-offset: -1px" id="w-10" shape="rect" placeholder="STAJLING"></image-slot>
+            </div>
+            <span aria-hidden="true" data-veil="1" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36,30,26,.34) 0%, rgba(36,30,26,.1) 40%, rgba(36,30,26,.86) 100%); opacity: .92; transition: opacity .45s cubic-bezier(.16,1,.3,1); pointer-events: none"></span>
+            <span data-num="1" style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #e7e7e5; pointer-events: none">10</span>
+            <span data-vlabel="1" style="position: absolute; left: 14px; bottom: 16px; writing-mode: vertical-rl; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #cfcac4; opacity: 1; transition: opacity .3s ease; pointer-events: none">STAJLING</span>
+            <span data-meta="1" style="position: absolute; inset: auto 0 0 0; display: flex; flex-direction: column; gap: 6px; padding: clamp(16px, 1.8vw, 28px); transform: translateY(12px); opacity: 0; transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .4s ease; pointer-events: none">
+              <span style="font-weight: 600; font-size: clamp(19px, 1.8vw, 28px); letter-spacing: -.02em; line-height: 1.06; color: #e7e7e5; white-space: nowrap">STAJLING</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .12em; color: #cfcac4; white-space: nowrap">Finiš za event · Drži cijeli dan</span>
+            </span>
+          </div>
+        </div>
+          <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+            <div style="display: flex; align-items: center; gap: 10px; margin-top: 14px">
+              <button type="button" onClick="{{ prevShot }}" aria-label="Prethodni rad" style="flex: 0 0 auto; width: 52px; height: 48px; display: flex; align-items: center; justify-content: center; background: transparent; border: 1px solid rgba(145,97,51,.55); color: #e7e7e5; font-size: 18px; cursor: pointer" style-active="background: rgba(145,97,51,.25)">←</button>
+              <button type="button" onClick="{{ nextShot }}" aria-label="Sljedeći rad" style="flex: 0 0 auto; width: 52px; height: 48px; display: flex; align-items: center; justify-content: center; background: transparent; border: 1px solid rgba(145,97,51,.55); color: #e7e7e5; font-size: 18px; cursor: pointer" style-active="background: rgba(145,97,51,.25)">→</button>
+              <span data-counter="1" style="margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #c08a4e">01 / 10</span>
+            </div>
+          </sc-if>
+
+        <div aria-hidden="true" data-cursor="1" style="position: fixed; left: 0; top: 0; z-index: 60; display: none; align-items: center; gap: 8px; padding: 10px 16px; background: rgba(36,30,26,.82); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border: 1px solid rgba(145,97,51,.55); border-radius: 2px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .2em; color: #e7e7e5; transform: translate3d(-200px, -200px, 0); pointer-events: none; will-change: transform">
+          <span>POGLEDAJ</span><span style="color: #f97300">→</span>
+        </div>
+
+        <sc-if value="{{ zoomOpen }}" hint-placeholder-val="{{ false }}">
+          <div onClick="{{ closeZoom }}" style="position: fixed; inset: 0; z-index: 96; display: flex; align-items: center; justify-content: center; padding: clamp(16px, 4vw, 64px); background: rgba(20,16,13,.95); cursor: zoom-out">
+            <div style="position: relative; display: flex; flex-direction: column; gap: 14px; max-width: 1200px; width: 100%">
+              <img data-zoom-img="1" alt="{{ zoomTitle }}" style="display: block; width: 100%; max-height: 76vh; object-fit: contain; background: #2b241f; border: 1px solid rgba(145,97,51,.4)" />
+              <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 16px">
+                <span style="display: flex; flex-direction: column; gap: 4px">
+                  <span style="font-weight: 600; font-size: clamp(20px, 2vw, 30px); letter-spacing: -.02em; color: #e7e7e5">{{ zoomTitle }}</span>
+                  <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; color: #B8B5B0">{{ zoomSub }}</span>
+                </span>
+                <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .2em; color: #c08a4e">ZATVORI ✕</span>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="max-width: 1500px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px)">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: clamp(28px, 4vw, 72px); margin-top: clamp(40px, 5vw, 80px)">
+          <h3 data-reveal style="margin: 0; max-width: 760px; font-weight: 600; font-size: clamp(26px, 3.6vw, 56px); line-height: 1.04; letter-spacing: -.03em; text-wrap: balance">Svako šišanje ima svoj karakter.<br /><em style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: #c08a4e">Mi mu dajemo precizan oblik.</em></h3>
+          <div data-reveal style="--d: 120ms; display: flex; flex-wrap: wrap; gap: 12px">
+            <a href="{{ storeUrl }}" onClick="{{ book }}" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .16em; color: #241e1a; background: #f97300; padding: 19px 34px; border-radius: 2px; font-weight: 500; white-space: nowrap" style-hover="background: #ff8a1f; color: #241e1a">REZERVIŠI TERMIN →</a>
+            <a href="{{ instagram }}" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .16em; color: #e7e7e5; border: 1px solid #916133; padding: 19px 34px; border-radius: 2px; white-space: nowrap" style-hover="border-color: #e7e7e5">VIŠE NA INSTAGRAMU</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="o-nama" style="border-top: 1px solid rgba(145,97,51,.32); padding: clamp(80px, 10vw, 170px) clamp(20px, 4vw, 56px); scroll-margin-top: 80px">
+      <div style="max-width: 1500px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: clamp(32px, 5vw, 90px)">
+        <div style="flex: 1 1 420px; position: relative; aspect-ratio: 880 / 1168; align-self: center; z-index: 0; pointer-events: none">
+          <div data-reveal-img style="position: absolute; left: -4%; right: -4%; top: 0; bottom: 0; background-image: url('./assets/tim-studio6.jpg'); background-size: cover; background-position: center 22%; background-repeat: no-repeat; -webkit-mask-image: radial-gradient(132% 124% at 50% 44%, #000 34%, rgba(0,0,0,.55) 62%, rgba(0,0,0,.14) 82%, transparent 94%); mask-image: radial-gradient(132% 124% at 50% 44%, #000 34%, rgba(0,0,0,.55) 62%, rgba(0,0,0,.14) 82%, transparent 94%)" role="img" aria-label="Tim berbernice La Vujke"></div>
+        </div>
+        <div style="flex: 1 1 400px; display: flex; flex-direction: column; justify-content: center; gap: clamp(22px, 3vw, 34px); position: relative; z-index: 1">
+          <p data-reveal style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .26em; color: #c08a4e">O NAMA</p>
+          <h2 data-reveal style="--d: 80ms; margin: 0; font-weight: 600; font-size: clamp(30px, 4vw, 64px); line-height: .98; letter-spacing: -.032em">VIŠE OD<br />DOBROG ŠIŠANJA.</h2>
+          <div style="display: flex; flex-direction: column; gap: 16px; max-width: 520px">
+            <p data-reveal style="--d: 150ms; margin: 0; font-size: 16px; line-height: 1.7; color: #e7e7e5; text-wrap: pretty">Vujke je mjesto gdje zanat, stil i karakter idu zajedno.</p>
+            <p data-reveal style="--d: 200ms; margin: 0; font-size: 16px; line-height: 1.7; color: #B8B5B0; text-wrap: pretty">Od 2019. godine gradimo barber iskustvo zasnovano na preciznom radu, individualnom pristupu i atmosferi zbog koje se vraćaš.</p>
+            <p data-reveal style="--d: 250ms; margin: 0; font-size: 16px; line-height: 1.7; color: #B8B5B0; text-wrap: pretty">Bez žurbe. Bez kompromisa. Samo dobar rad i stil koji je tvoj.</p>
+          </div>
+          <div data-rule style="height: 1px; background: rgba(145,97,51,.6)"></div>
+          <div style="display: flex; flex-wrap: wrap; gap: clamp(20px, 3vw, 48px)">
+            <div data-reveal style="--d: 120ms">
+              <p style="margin: 0 0 6px; font-family: 'IBM Plex Mono', monospace; font-size: 30px; color: #c08a4e">2019</p>
+              <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #B8B5B0">OSNOVAN</p>
+            </div>
+            <div data-reveal style="--d: 190ms">
+              <p style="margin: 0 0 6px; font-family: 'IBM Plex Mono', monospace; font-size: 30px; color: #c08a4e">03</p>
+              <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #B8B5B0">LOKACIJE</p>
+            </div>
+            <div data-reveal style="--d: 260ms">
+              <p style="margin: 0 0 6px; font-family: 'IBM Plex Mono', monospace; font-size: 30px; color: #c08a4e">09</p>
+              <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #B8B5B0">BARBERA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tim" style="background: #241e1a; margin: clamp(72px, 9vw, 150px) calc(-1 * clamp(20px, 4vw, 56px)) calc(-1 * clamp(80px, 10vw, 170px)); padding: 0 clamp(20px, 4vw, 56px) clamp(72px, 9vw, 150px); scroll-margin-top: 80px">
+        <div style="max-width: 1500px; margin: 0 auto">
+          <div aria-hidden="true" style="display: flex; height: 1px; margin: 0 0 clamp(48px, 6vw, 88px)"><span style="flex: 1 1 auto; background: rgba(145,97,51,.28)"></span></div>
+
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 28px; margin-bottom: clamp(36px, 4vw, 58px)">
+          <div>
+            <div data-reveal style="width: 56px; height: 3px; background: #f97300; margin-bottom: 20px"></div>
+            <p data-reveal style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .26em; color: #c08a4e">EKIPA</p>
+            <h2 data-reveal style="--d: 80ms; margin: 0; font-weight: 700; font-size: clamp(34px, 5.4vw, 88px); line-height: .94; letter-spacing: -.035em">EKIPA IZA MAŠINICE.</h2>
+          </div>
+          <p data-reveal style="--d: 150ms; margin: 0; max-width: 330px; font-size: 15.5px; line-height: 1.65; color: #B8B5B0; text-wrap: pretty">Svaka lokacija ima svoju ekipu.</p>
+        </div>
+
+        <div data-reveal style="--d: 120ms; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: rgba(145,97,51,.3); border: 1px solid rgba(145,97,51,.3); margin-bottom: clamp(40px, 5vw, 70px)">
+          <div style="background: #352c25; padding: 22px 24px">
+            <div style="width: 28px; height: 3px; background: #f97300; margin-bottom: 14px"></div>
+            <p style="margin: 0 0 6px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; color: #f97300">MASTER-EDUKATOR</p>
+            <p style="margin: 0; font-size: 14px; line-height: 1.55; color: #B8B5B0">Najviši nivo, vodi edukacije i školuje nove barbere.</p>
+          </div>
+          <div style="background: #352c25; padding: 22px 24px">
+            <div style="width: 28px; height: 3px; background: #c08a4e; margin-bottom: 14px"></div>
+            <p style="margin: 0 0 6px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; color: #c08a4e">MASTER BARBER</p>
+            <p style="margin: 0; font-size: 14px; line-height: 1.55; color: #B8B5B0">Godine prakse, najzahtjevniji fadeovi i kompletna transformacija.</p>
+          </div>
+          <div style="background: #352c25; padding: 22px 24px">
+            <div style="width: 28px; height: 3px; background: #e7e7e5; margin-bottom: 14px"></div>
+            <p style="margin: 0 0 6px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; color: #e7e7e5">BARBER</p>
+            <p style="margin: 0; font-size: 14px; line-height: 1.55; color: #B8B5B0">Završena edukacija, samostalan rad na svim osnovnim uslugama.</p>
+          </div>
+        </div>
+
+          <div style="display: flex; flex-direction: column; gap: clamp(36px, 4vw, 58px)">
+
+            <div>
+              <div onClick="{{ openDoboj }}" style="display: flex; align-items: baseline; gap: 16px; border-bottom: 1px solid rgba(145,97,51,.45); padding-bottom: 12px; margin-bottom: 6px; cursor: pointer; min-height: 44px">
+                <span data-reveal style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .22em; color: #c08a4e">DOBOJ</span>
+                <sc-if value="{{ crewTabs }}" hint-placeholder-val="{{ false }}">
+                  <span style="margin-left: auto; display: flex; align-items: baseline; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; color: #a39a92">5 BARBERA<span style="font-size: 18px; line-height: 1; color: #f97300">{{ signDoboj }}</span></span>
+                </sc-if>
+              </div>
+              <sc-if value="{{ crewDoboj }}" hint-placeholder-val="{{ true }}">
+              <div data-reveal style="--d: 0ms; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(14px, 2vw, 28px); padding: 18px 6px; border-bottom: 1px solid rgba(145,97,51,.22)">
+                <span style="flex: 0 0 72px; width: 72px; height: 88px; display: block"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="t-vujke" shape="rect" placeholder="PORTRET"></image-slot></span>
+                <span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 600; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -.025em; line-height: 1.05">DARIO VUJIČIĆ</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; color: #a39a92">VUJKE</span></span>
+                <span style="flex: 0 0 auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #241e1a; background: #f97300; padding: 8px 14px; border-radius: 2px">MASTER-EDUKATOR</span>
+              </div>
+              <div data-reveal style="--d: 70ms; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(14px, 2vw, 28px); padding: 18px 6px; border-bottom: 1px solid rgba(145,97,51,.22)">
+                <span style="flex: 0 0 72px; width: 72px; height: 88px; display: block"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="t-zeca" shape="rect" placeholder="PORTRET"></image-slot></span>
+                <span style="flex: 1 1 240px; font-weight: 600; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -.025em">ŽECA</span>
+                <span style="flex: 0 0 auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #c08a4e; border: 1px solid rgba(192,138,78,.6); padding: 8px 14px; border-radius: 2px">MASTER BARBER</span>
+              </div>
+              <div data-reveal style="--d: 140ms; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(14px, 2vw, 28px); padding: 18px 6px; border-bottom: 1px solid rgba(145,97,51,.22)">
+                <span style="flex: 0 0 72px; width: 72px; height: 88px; display: block"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="t-joca" shape="rect" placeholder="PORTRET"></image-slot></span>
+                <span style="flex: 1 1 240px; font-weight: 600; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -.025em">JOCA</span>
+                <span style="flex: 0 0 auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #c08a4e; border: 1px solid rgba(192,138,78,.6); padding: 8px 14px; border-radius: 2px">MASTER BARBER</span>
+              </div>
+              <div data-reveal style="--d: 210ms; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(14px, 2vw, 28px); padding: 18px 6px; border-bottom: 1px solid rgba(145,97,51,.22)">
+                <span style="flex: 0 0 72px; width: 72px; height: 88px; display: block"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="t-cume" shape="rect" placeholder="PORTRET"></image-slot></span>
+                <span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 600; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -.025em; line-height: 1.05">ČUME</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; color: #a39a92">SAMO SRIJEDOM</span></span>
+                <span style="flex: 0 0 auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #c08a4e; border: 1px solid rgba(192,138,78,.6); padding: 8px 14px; border-radius: 2px">MASTER BARBER</span>
+              </div>
+              <div data-reveal style="--d: 280ms; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(14px, 2vw, 28px); padding: 18px 6px; border-bottom: 1px solid rgba(145,97,51,.22)">
+                <span style="flex: 0 0 72px; width: 72px; height: 88px; display: block"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="t-ana" shape="rect" placeholder="PORTRET"></image-slot></span>
+                <span style="flex: 1 1 240px; font-weight: 600; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -.025em">ANA</span>
+                <span style="flex: 0 0 auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #e7e7e5; border: 1px solid rgba(231,231,229,.4); padding: 8px 14px; border-radius: 2px">BARBER</span>
+              </div>
+              </sc-if>
+            </div>
+
+            <div>
+              <div onClick="{{ openDerventa }}" style="display: flex; align-items: baseline; gap: 16px; border-bottom: 1px solid rgba(145,97,51,.45); padding-bottom: 12px; margin-bottom: 6px; cursor: pointer; min-height: 44px">
+                <span data-reveal style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .22em; color: #c08a4e">DERVENTA</span>
+                <sc-if value="{{ crewTabs }}" hint-placeholder-val="{{ false }}">
+                  <span style="margin-left: auto; display: flex; align-items: baseline; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; color: #a39a92">4 BARBERA<span style="font-size: 18px; line-height: 1; color: #f97300">{{ signDerventa }}</span></span>
+                </sc-if>
+              </div>
+              <sc-if value="{{ crewDerventa }}" hint-placeholder-val="{{ true }}">
+              <div data-reveal style="--d: 0ms; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(14px, 2vw, 28px); padding: 18px 6px; border-bottom: 1px solid rgba(145,97,51,.22)">
+                <span style="flex: 0 0 72px; width: 72px; height: 88px; display: block"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="t-vujke-dv" shape="rect" placeholder="PORTRET"></image-slot></span>
+                <span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 600; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -.025em; line-height: 1.05">DARIO VUJIČIĆ</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; color: #a39a92">VUJKE</span></span>
+                <span style="flex: 0 0 auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #241e1a; background: #f97300; padding: 8px 14px; border-radius: 2px">MASTER-EDUKATOR</span>
+              </div>
+              <div data-reveal style="--d: 70ms; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(14px, 2vw, 28px); padding: 18px 6px; border-bottom: 1px solid rgba(145,97,51,.22)">
+                <span style="flex: 0 0 72px; width: 72px; height: 88px; display: block"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="t-domla" shape="rect" placeholder="PORTRET"></image-slot></span>
+                <span style="flex: 1 1 240px; font-weight: 600; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -.025em">ĐOMLA</span>
+                <span style="flex: 0 0 auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #c08a4e; border: 1px solid rgba(192,138,78,.6); padding: 8px 14px; border-radius: 2px">MASTER BARBER</span>
+              </div>
+              <div data-reveal style="--d: 140ms; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(14px, 2vw, 28px); padding: 18px 6px; border-bottom: 1px solid rgba(145,97,51,.22)">
+                <span style="flex: 0 0 72px; width: 72px; height: 88px; display: block"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="t-jana" shape="rect" placeholder="PORTRET"></image-slot></span>
+                <span style="flex: 1 1 240px; font-weight: 600; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -.025em">JANA</span>
+                <span style="flex: 0 0 auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #c08a4e; border: 1px solid rgba(192,138,78,.6); padding: 8px 14px; border-radius: 2px">MASTER BARBER</span>
+              </div>
+              <div data-reveal style="--d: 210ms; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(14px, 2vw, 28px); padding: 18px 6px; border-bottom: 1px solid rgba(145,97,51,.22)">
+                <span style="flex: 0 0 72px; width: 72px; height: 88px; display: block"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="t-helena" shape="rect" placeholder="PORTRET"></image-slot></span>
+                <span style="flex: 1 1 240px; font-weight: 600; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -.025em">HELENA</span>
+                <span style="flex: 0 0 auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #e7e7e5; border: 1px solid rgba(231,231,229,.4); padding: 8px 14px; border-radius: 2px">BARBER</span>
+              </div>
+              </sc-if>
+            </div>
+
+            <div>
+              <div onClick="{{ openBrod }}" style="display: flex; align-items: baseline; gap: 16px; border-bottom: 1px solid rgba(145,97,51,.45); padding-bottom: 12px; margin-bottom: 6px; cursor: pointer; min-height: 44px">
+                <span data-reveal style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .22em; color: #c08a4e">BROD</span>
+                <sc-if value="{{ crewTabs }}" hint-placeholder-val="{{ false }}">
+                  <span style="margin-left: auto; display: flex; align-items: baseline; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; color: #a39a92">2 BARBERA<span style="font-size: 18px; line-height: 1; color: #f97300">{{ signBrod }}</span></span>
+                </sc-if>
+              </div>
+              <sc-if value="{{ crewBrod }}" hint-placeholder-val="{{ true }}">
+              <div data-reveal style="--d: 0ms; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(14px, 2vw, 28px); padding: 18px 6px; border-bottom: 1px solid rgba(145,97,51,.22)">
+                <span style="flex: 0 0 72px; width: 72px; height: 88px; display: block"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="t-cume-br" shape="rect" placeholder="PORTRET"></image-slot></span>
+                <span style="flex: 1 1 240px; font-weight: 600; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -.025em">ČUME</span>
+                <span style="flex: 0 0 auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #c08a4e; border: 1px solid rgba(192,138,78,.6); padding: 8px 14px; border-radius: 2px">MASTER BARBER</span>
+              </div>
+              <div data-reveal style="--d: 70ms; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(14px, 2vw, 28px); padding: 18px 6px; border-bottom: 1px solid rgba(145,97,51,.22)">
+                <span style="flex: 0 0 72px; width: 72px; height: 88px; display: block"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="t-romana" shape="rect" placeholder="PORTRET"></image-slot></span>
+                <span style="flex: 1 1 240px; font-weight: 600; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -.025em">ROMANA</span>
+                <span style="flex: 0 0 auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #e7e7e5; border: 1px solid rgba(231,231,229,.4); padding: 8px 14px; border-radius: 2px">BARBER</span>
+              </div>
+              </sc-if>
+            </div>
+
+          </div>
+
+
+        <p style="margin: 22px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #a39a92">PORTRETI SE DODAJU PREVLAČENJEM SLIKE NA POLJE</p>
+
+        <div style="border-top: 1px solid rgba(145,97,51,.4); margin-top: clamp(48px, 6vw, 90px); padding-top: clamp(32px, 4vw, 52px)">
+          <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(28px, 4vw, 72px)">
+            <div style="flex: 1 1 480px">
+              <div data-reveal style="width: 56px; height: 3px; background: #f97300; margin-bottom: 20px"></div>
+              <p data-reveal style="margin: 0 0 14px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .26em; color: #c08a4e">EDUKACIJA</p>
+              <h3 data-reveal style="--d: 80ms; margin: 0 0 16px; font-weight: 600; font-size: clamp(26px, 3.35vw, 48px); line-height: 1.02; letter-spacing: -.03em">EDUKACIJSKO HUMANITARNO ŠIŠANJE</h3>
+              <p data-reveal style="--d: 140ms; margin: 0; max-width: 560px; font-size: 16px; line-height: 1.7; color: #B8B5B0; text-wrap: pretty">Šišaju naši junior barberi, za vježbu uz mentora. Samo u Doboju.</p>
+            </div>
+            <div style="flex: 0 1 auto; display: flex; flex-direction: column; align-items: stretch; gap: 14px; padding-top: clamp(0px, (100vw - 900px) * 99, 62px)">
+              <div data-reveal style="--d: 200ms; display: flex; align-items: center; gap: 18px; border: 1px solid rgba(145,97,51,.5); padding: 22px 28px; border-radius: 2px">
+                <span style="font-family: 'IBM Plex Mono', monospace; font-size: clamp(32px, 3.4vw, 48px); line-height: 1; color: #f97300">5 KM</span>
+                <span style="display: flex; flex-direction: column; gap: 4px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; color: #B8B5B0">
+                  <span>SIMBOLIČNA CIJENA</span>
+                  <span style="color: #c08a4e">ZA HUMANITARNE SVRHE</span>
+                </span>
+              </div>
+              <a href="{{ storeUrl }}" target="_blank" rel="noopener" data-reveal style="--d: 260ms; display: flex; align-items: center; justify-content: center; gap: 14px; border: 1px solid rgba(145,97,51,.5); padding: 20px 28px; border-radius: 2px" style-hover="border-color: #f97300; background: rgba(145,97,51,.1)">
+                <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; white-space: nowrap">PRIJAVI SE ZA ŠIŠANJE</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+    </section>
+
+    <section id="zasto" style="padding: clamp(72px, 9vw, 150px) clamp(20px, 4vw, 56px); border-bottom: 1px solid rgba(145,97,51,.22); scroll-margin-top: 80px">
+      <div style="max-width: 1500px; margin: 0 auto">
+        <p data-reveal style="margin: 0 0 clamp(36px, 4vw, 64px); font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .26em; color: #c08a4e">ZAŠTO LA VUJKE</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(28px, 3vw, 56px)">
+          <div data-reveal>
+            <p style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: clamp(38px, 4vw, 58px); line-height: 1; color: #c08a4e">01</p>
+            <div data-rule style="height: 1px; background: rgba(145,97,51,.6); margin-bottom: 16px"></div>
+            <h3 style="margin: 0 0 10px; font-weight: 600; font-size: 20px; letter-spacing: .02em">TERMIN JE TVOJ</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #B8B5B0">Nema sjedenja pola sata i gledanja kad ćeš doći na red. Dođeš u svoje vrijeme i sjedaš u stolicu.</p>
+          </div>
+          <div data-reveal style="--d: 90ms">
+            <p style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: clamp(38px, 4vw, 58px); line-height: 1; color: #c08a4e">02</p>
+            <div data-rule style="--d: 90ms; height: 1px; background: rgba(145,97,51,.6); margin-bottom: 16px"></div>
+            <h3 style="margin: 0 0 10px; font-weight: 600; font-size: 20px; letter-spacing: .02em">DOGOVOR</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #B8B5B0">Ne moraš znati naziv frizure. Pokaži sliku ili reci kako se inače šišaš, mi ćemo ostalo.</p>
+          </div>
+          <div data-reveal style="--d: 180ms">
+            <p style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: clamp(38px, 4vw, 58px); line-height: 1; color: #c08a4e">03</p>
+            <div data-rule style="--d: 180ms; height: 1px; background: rgba(145,97,51,.6); margin-bottom: 16px"></div>
+            <h3 style="margin: 0 0 10px; font-weight: 600; font-size: 20px; letter-spacing: .02em">ISKUSTVO</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #B8B5B0">Više od sedam godina rada i broj šišanja koji više ne pamtimo.</p>
+          </div>
+          <div data-reveal style="--d: 270ms">
+            <p style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: clamp(38px, 4vw, 58px); line-height: 1; color: #c08a4e">04</p>
+            <div data-rule style="--d: 270ms; height: 1px; background: rgba(145,97,51,.6); margin-bottom: 16px"></div>
+            <h3 style="margin: 0 0 10px; font-weight: 600; font-size: 20px; letter-spacing: .02em">ATMOSFERA</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #B8B5B0">Uredan prostor, čist alat i ekipa koja zna šta radi.</p>
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid rgba(145,97,51,.4); margin-top: clamp(48px, 6vw, 88px); padding-top: clamp(32px, 4vw, 52px)">
+          <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: clamp(26px, 3vw, 40px)">
+            <div>
+              <p data-reveal style="margin: 0 0 14px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .26em; color: #c08a4e">RECENZIJE</p>
+              <h3 data-reveal style="--d: 80ms; margin: 0; font-weight: 600; font-size: clamp(24px, 3.2vw, 46px); line-height: 1.02; letter-spacing: -.03em">ŠTA KAŽU KLIJENTI.</h3>
+            </div>
+            <div data-reveal style="--d: 150ms; display: flex; gap: 10px">
+              <button onClick="{{ prevReview }}" aria-label="Prethodna recenzija" style="width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: none; border: 1px solid rgba(145,97,51,.6); border-radius: 2px; color: #e7e7e5; font-family: 'IBM Plex Mono', monospace; font-size: 16px; cursor: pointer" style-hover="border-color: #f97300; color: #f97300">←</button>
+              <button onClick="{{ nextReview }}" aria-label="Sljedeća recenzija" style="width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: none; border: 1px solid rgba(145,97,51,.6); border-radius: 2px; color: #e7e7e5; font-family: 'IBM Plex Mono', monospace; font-size: 16px; cursor: pointer" style-hover="border-color: #f97300; color: #f97300">→</button>
+            </div>
+          </div>
+          <div data-rail="1" onMouseEnter="{{ pauseRail }}" onMouseLeave="{{ resumeRail }}" style="overflow: hidden">
+            <div data-rail-track="1" style="display: flex; gap: clamp(12px, 1.4vw, 20px); will-change: transform">
+            <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="6">
+              <figure style="margin: 0; flex: 0 0 min(84vw, 340px); display: flex; flex-direction: column; gap: 18px; border: 1px solid rgba(145,97,51,.35); padding: clamp(22px, 2.2vw, 32px)">
+                <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .2em; color: #c08a4e">{{ r.stars }}</span>
+                <blockquote style="margin: 0; font-size: 16px; line-height: 1.65; color: #e7e7e5; text-wrap: pretty">{{ r.text }}</blockquote>
+                <span style="display: flex; flex-direction: column; gap: 4px; border-top: 1px solid rgba(145,97,51,.3); padding-top: 14px; margin-top: auto">
+                  <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #e7e7e5">{{ r.name }}</span>
+                  <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; color: #a39a92">{{ r.meta }}</span>
+                </span>
+              </figure>
+            </sc-for>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proizvodi" style="background: #ded2c0; color: #352c25; padding: clamp(56px, 7vw, 110px) clamp(20px, 4vw, 56px); scroll-margin-top: 80px">
+      <div style="max-width: 1500px; margin: 0 auto">
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: clamp(28px, 3vw, 48px)">
+          <div>
+            <p data-reveal style="margin: 0 0 12px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .26em; color: #7a5029">PROIZVODI</p>
+            <h2 data-reveal style="--d: 60ms; margin: 0; font-weight: 700; font-size: clamp(28px, 5vw, 64px); line-height: 1; letter-spacing: -.03em; white-space: nowrap" data-nowrap-lg="1">PATO COSMETICS</h2>
+          </div>
+          <p data-reveal style="--d: 120ms; margin: 0; max-width: 340px; font-size: 15px; line-height: 1.6; color: #564b42">Naša linija za bradu, kosu i lice.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: clamp(12px, 1.4vw, 20px)">
+          <sc-for list="{{ products }}" as="p" hint-placeholder-count="4">
+            <figure data-reveal style="margin: 0">
+              <div style="position: relative; aspect-ratio: 1; background: #cbbca6; overflow: hidden">
+                <sc-for list="{{ p.slots }}" as="v" hint-placeholder-count="1">
+                  <span style="position: absolute; inset: 0; transition: opacity .4s ease; opacity: {{ v.op }}"><image-slot style="color: #564b42" id="{{ v.slotId }}" shape="rect" placeholder="{{ v.ph }}"></image-slot></span>
+                </sc-for>
+                <sc-if value="{{ p.multi }}" hint-placeholder-val="{{ false }}">
+                  <span style="position: absolute; inset: auto 8px 8px 8px; display: flex; align-items: center; justify-content: space-between; gap: 8px; pointer-events: none">
+                    <button onClick="{{ p.prev }}" aria-label="Prethodna varijanta" style="pointer-events: auto; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: rgba(222,210,192,.9); border: 1px solid rgba(122,80,41,.5); border-radius: 2px; color: #352c25; font-family: 'IBM Plex Mono', monospace; font-size: 13px; cursor: pointer" style-hover="background: #f97300; border-color: #f97300; color: #241e1a">←</button>
+                    <button onClick="{{ p.next }}" aria-label="Sljedeća varijanta" style="pointer-events: auto; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: rgba(222,210,192,.9); border: 1px solid rgba(122,80,41,.5); border-radius: 2px; color: #352c25; font-family: 'IBM Plex Mono', monospace; font-size: 13px; cursor: pointer" style-hover="background: #f97300; border-color: #f97300; color: #241e1a">→</button>
+                  </span>
+                </sc-if>
+              </div>
+              <p style="margin: 12px 0 4px; font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; letter-spacing: .18em; color: #7a5029">{{ p.cat }}</p>
+              <p style="margin: 0 0 4px; font-weight: 600; font-size: 16px; line-height: 1.2; letter-spacing: -.01em">{{ p.name }}</p>
+              <p style="margin: 0 0 6px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #8f3d00">{{ p.variant }}</p>
+              <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #564b42">{{ p.desc }}</p>
+            </figure>
+          </sc-for>
+        </div>
+
+        <a href="{{ pato }}" target="_blank" rel="noopener" data-reveal style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; background: #352c25; color: #e7e7e5; margin-top: clamp(12px, 1.4vw, 20px); padding: clamp(20px, 2.4vw, 32px) clamp(20px, 2.4vw, 34px)" style-hover="background: #241e1a; color: #e7e7e5">
+          <span style="display: flex; align-items: center; gap: clamp(16px, 2vw, 28px)">
+            <span style="flex: 0 0 auto; width: 100px; height: 100px; display: block; background: rgba(145,97,51,.14)"><image-slot style="color: #B8B5B0" id="pr-box" shape="rect" placeholder="KOMPLET PROIZVODA"></image-slot></span>
+            <span style="display: flex; flex-direction: column; gap: 5px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; letter-spacing: .2em; color: #f97300">KOMPLET</span>
+              <span style="font-weight: 700; font-size: clamp(20px, 2.2vw, 30px); letter-spacing: -.02em">PATO BOX</span>
+              <span style="font-size: 13.5px; line-height: 1.5; color: #B8B5B0">Kompletna PATO njega na jednom mjestu.</span>
+            </span>
+          </span>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .16em; color: #241e1a; background: #f97300; padding: 16px 26px; border-radius: 2px; white-space: nowrap">NARUČI SVOJ BOX →</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="lokacije" style="padding: clamp(72px, 9vw, 150px) clamp(20px, 4vw, 56px); scroll-margin-top: 80px">
+      <div style="max-width: 1500px; margin: 0 auto">
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: clamp(36px, 4vw, 64px)">
+          <div>
+            <p data-reveal style="margin: 0 0 18px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .26em; color: #c08a4e">LOKACIJE</p>
+            <h2 data-reveal style="--d: 80ms; margin: 0; font-weight: 700; font-size: clamp(34px, 5.2vw, 84px); line-height: .94; letter-spacing: -.035em">TRI ADRESE.<br />ISTI STANDARD.</h2>
+          </div>
+          <a href="tel:{{ phoneHref }}" data-reveal style="--d: 160ms; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .16em; color: #e7e7e5; border: 1px solid #916133; padding: 17px 30px; border-radius: 2px" style-hover="border-color: #e7e7e5">POZOVI {{ phone }}</a>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: rgba(145,97,51,.3); border: 1px solid rgba(145,97,51,.3)">
+          <sc-for list="{{ locations }}" as="l" hint-placeholder-count="3">
+            <div data-reveal style="background: #241e1a; padding: clamp(26px, 3vw, 42px) clamp(22px, 2.4vw, 34px); display: flex; flex-direction: column; gap: 18px">
+              <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px">
+                <h3 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 34px); letter-spacing: -.02em">{{ l.city }}</h3>
+                <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; color: #c08a4e">{{ l.num }}</span>
+              </div>
+              <div style="height: 1px; background: rgba(145,97,51,.4)"></div>
+              <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #B8B5B0">{{ l.address }}</p>
+              <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .1em; color: #e7e7e5">{{ l.phone }}</p>
+              <div style="display: flex; flex-direction: column; gap: 6px; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .1em; color: #B8B5B0; margin-top: auto">
+                <span style="display: flex; justify-content: space-between; gap: 12px"><span>PON–PET</span><span style="color: #e7e7e5">{{ l.h1 }}</span></span>
+                <span style="display: flex; justify-content: space-between; gap: 12px"><span>SUBOTA</span><span style="color: #e7e7e5">{{ l.h2 }}</span></span>
+                <span style="display: flex; justify-content: space-between; gap: 12px"><span>NEDJELJA</span><span>ZATVORENO</span></span>
+              </div>
+              <a href="{{ l.maps }}" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .18em; color: #c08a4e; border-top: 1px solid rgba(145,97,51,.4); padding-top: 16px" style-hover="color: #f97300">{{ l.mapsLabel }}</a>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin: 20px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .16em; color: #a39a92">ISTI BROJ ZA SVE TRI LOKACIJE</p>
+      </div>
+    </section>
+
+    <section style="position: relative; overflow: hidden; background: #241e1a; padding: clamp(90px, 12vw, 190px) clamp(20px, 4vw, 56px); min-height: 100vh; display: flex; align-items: center; justify-content: center">
+      <div aria-hidden="true" style="position: absolute; inset: 0; background-image: url('./assets/cta-b2.jpg'); background-size: cover; background-position: center; opacity: .5"></div>
+      <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(36,30,26,.72) 0%, rgba(36,30,26,.5) 45%, rgba(36,30,26,.86) 100%)"></div>
+      <div style="position: relative; max-width: 1200px; width: 100%; margin: 0 auto; text-align: center">
+        <p data-reveal style="margin: 0 0 clamp(20px, 3vw, 34px); font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .26em; color: #c08a4e">REZERVACIJA</p>
+        <h2 data-reveal style="--d: 80ms; margin: 0; font-weight: 700; font-size: clamp(38px, 7.4vw, 122px); line-height: .92; letter-spacing: -.038em; text-wrap: balance">VRIJEME JE ZA NOVI STIL.</h2>
+        <p data-reveal style="--d: 160ms; margin: clamp(22px, 3vw, 34px) auto 0; max-width: 460px; font-size: 16.5px; line-height: 1.6; color: #cfcac4">Rezerviši svoj termin putem La Vujke aplikacije, u par dodira.</p>
+        <div data-reveal style="--d: 230ms; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: clamp(30px, 4vw, 48px)">
+          <a href="{{ storeUrl }}" onClick="{{ book }}" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: .16em; color: #241e1a; background: #f97300; padding: 22px 44px; border-radius: 2px; font-weight: 500" style-hover="background: #ff8a1f; color: #241e1a">REZERVIŠI TERMIN</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="kontakt" style="background: #241e1a; border-top: 1px solid rgba(145,97,51,.3); padding: clamp(56px, 7vw, 100px) clamp(20px, 4vw, 56px) 36px; scroll-margin-top: 80px">
+    <div style="max-width: 1500px; margin: 0 auto">
+      <div style="display: flex; flex-wrap: wrap; gap: clamp(32px, 4vw, 64px)">
+
+        <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 20px">
+          <div style="display: flex; align-items: center; gap: 14px">
+            <span style="display: block; flex: 0 0 52px; width: 52px; height: 52px"><image-slot style="--slot-fg: #d8d3cc; color: #d8d3cc; background: rgba(145,97,51,.1); outline: 1px solid rgba(145,97,51,.35); outline-offset: -1px" id="logo-footer" shape="circle" placeholder="LOGO"></image-slot></span>
+            <span style="font-size: clamp(28px, 3.4vw, 44px); font-weight: 700; letter-spacing: -.02em; line-height: 1">LA VUJKE</span>
+          </div>
+          <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .2em; color: #c08a4e">PRECIZNOST. STIL. KARAKTER.</p>
+          <p style="margin: 0; max-width: 300px; font-size: 14.5px; line-height: 1.65; color: #B8B5B0">Berbernica od 2019. Derventa, Doboj i Brod. Termini isključivo preko aplikacije.</p>
+          <a href="{{ storeUrl }}" onClick="{{ book }}" target="_blank" rel="noopener" style="align-self: flex-start; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .16em; color: #241e1a; background: #f97300; padding: 19px 32px; border-radius: 2px; font-weight: 500" style-hover="background: #ff8a1f; color: #241e1a">REZERVIŠI TERMIN</a>
+        </div>
+
+        <nav aria-label="Footer navigacija" style="flex: 1 1 170px; display: flex; flex-direction: column">
+          <p style="margin: 0 0 16px; padding-bottom: 12px; border-bottom: 1px solid rgba(145,97,51,.35); font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #c08a4e">STRANICA</p>
+          <span style="display: flex; flex-direction: column; gap: 11px">
+            <a href="#pocetna" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0" style-hover="color: #e7e7e5">POČETNA</a>
+            <a href="#usluge" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0" style-hover="color: #e7e7e5">USLUGE</a>
+            <a href="#radovi" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0" style-hover="color: #e7e7e5">RADOVI</a>
+            <a href="#o-nama" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0" style-hover="color: #e7e7e5">O NAMA</a>
+            <a href="#zasto" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0" style-hover="color: #e7e7e5">RECENZIJE</a>
+            <a href="#proizvodi" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0" style-hover="color: #e7e7e5">PROIZVODI</a>
+            <a href="#lokacije" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0" style-hover="color: #e7e7e5">LOKACIJE</a>
+          </span>
+        </nav>
+
+        <div style="flex: 1 1 190px; display: flex; flex-direction: column">
+          <p style="margin: 0 0 16px; padding-bottom: 12px; border-bottom: 1px solid rgba(145,97,51,.35); font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #c08a4e">PRATI NAS</p>
+          <span style="display: flex; flex-direction: column; gap: 11px">
+            <a href="{{ instagram }}" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0" style-hover="color: #e7e7e5">INSTAGRAM</a>
+            <a href="https://www.facebook.com/lavujke/" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0" style-hover="color: #e7e7e5">FACEBOOK</a>
+            <a href="https://www.tiktok.com/@la_vujke.berbernica" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0" style-hover="color: #e7e7e5">TIKTOK</a>
+            <a href="{{ pato }}" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0" style-hover="color: #e7e7e5">@PATO.COSMETICS</a>
+          </span>
+        </div>
+
+        <div style="flex: 1 1 210px; display: flex; flex-direction: column">
+          <p style="margin: 0 0 16px; padding-bottom: 12px; border-bottom: 1px solid rgba(145,97,51,.35); font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; color: #c08a4e">KONTAKT</p>
+          <span style="display: flex; flex-direction: column; gap: 11px">
+            <a href="tel:{{ phoneHref }}" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0" style-hover="color: #e7e7e5">{{ phone }}</a>
+            <span style="display: flex; flex-direction: column; gap: 3px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0">EMAIL</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; letter-spacing: .18em; color: #a39a92">EMAIL · DOPUNITI</span>
+            </span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; color: #B8B5B0">CARA DUŠANA BB, DOBOJ</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; color: #B8B5B0">TRIVE VUJIĆA 18, DERVENTA</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; color: #B8B5B0">SVETOG SAVE 27, BROD</span>
+          </span>
+        </div>
+
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; border-top: 1px solid rgba(145,97,51,.25); margin-top: clamp(40px, 5vw, 72px); padding-top: 22px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; color: #a39a92">
+        <span>© 2026 LA VUJKE BERBERNICA</span>
+        <span>DERVENTA · DOBOJ · BROD / BOSNA I HERCEGOVINA</span>
+      </div>
+    </div>
+  </footer>
+
+  <sc-if value="{{ showBar }}" hint-placeholder-val="{{ false }}">
+    <div style="position: fixed; bottom: 0; left: 0; right: 0; z-index: 88; display: flex; gap: 1px; background: rgba(145,97,51,.4); padding-bottom: env(safe-area-inset-bottom)">
+      <a href="tel:{{ phoneHref }}" style="flex: 0 0 34%; text-align: center; background: #241e1a; color: #e7e7e5; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .16em; padding: 20px 8px">POZOVI</a>
+      <a href="{{ storeUrl }}" target="_blank" rel="noopener" style="flex: 1 1 auto; text-align: center; background: #f97300; color: #241e1a; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .16em; padding: 20px 8px; font-weight: 500">REZERVIŠI TERMIN</a>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ bookOpen }}" hint-placeholder-val="{{ false }}">
+    <div role="dialog" aria-modal="true" aria-label="Rezervacija termina" style="position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(36,30,26,.9); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px)">
+      <div style="position: relative; width: 100%; max-width: 520px; background: #352c25; border: 1px solid rgba(145,97,51,.55); border-radius: 2px; padding: clamp(28px, 4vw, 52px)">
+        <button onClick="{{ closeBook }}" aria-label="Zatvori" style="position: absolute; top: 14px; right: 14px; width: 44px; height: 44px; background: none; border: none; color: #B8B5B0; font-size: 22px; line-height: 1; cursor: pointer">×</button>
+        <p style="margin: 0 0 18px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .24em; color: #c08a4e">REZERVACIJE</p>
+        <h2 style="margin: 0 0 14px; font-weight: 600; font-size: clamp(24px, 3vw, 36px); line-height: 1.05; letter-spacing: -.028em">TERMINI IDU PREKO APLIKACIJE</h2>
+        <p style="margin: 0 0 28px; font-size: 15.5px; line-height: 1.65; color: #B8B5B0">Preuzmi La Vujke aplikaciju, izaberi lokaciju, uslugu i termin. Bez poziva i bez čekanja.</p>
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <a href="{{ playUrl }}" target="_blank" rel="noopener" style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border: 1px solid rgba(145,97,51,.5); padding: 20px 24px; border-radius: 2px" style-hover="border-color: #f97300; background: rgba(145,97,51,.1)">
+            <span style="font-weight: 600; font-size: 16px">Google Play</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #c08a4e">ANDROID →</span>
+          </a>
+          <a href="{{ appStoreUrl }}" target="_blank" rel="noopener" style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border: 1px solid rgba(145,97,51,.5); padding: 20px 24px; border-radius: 2px" style-hover="border-color: #f97300; background: rgba(145,97,51,.1)">
+            <span style="font-weight: 600; font-size: 16px">App Store</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .2em; color: #c08a4e">iPHONE →</span>
+          </a>
+        </div>
+        <p style="margin: 26px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .14em; color: #a39a92">ILI POZOVI {{ phone }}</p>
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showStickyBar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Mobile&quot;}}">
+const CFG = {
+  PHONE: "065 210 982",
+  PHONE_HREF: "+38765210982",
+  INSTAGRAM: "https://www.instagram.com/la_vujke.berbernica/",
+  GOOGLE_PLAY_URL: "https://play.google.com/store/apps/details?id=com.cutlio.la.vujke.barbershop",
+  APP_STORE_URL: "https://apps.apple.com/ba/app/la-vujke-barbershop/id6446151789",
+  BOOKING_URL: "https://onelink.to/2mzfve",
+  PATO: "https://www.instagram.com/pato.cosmetics/",
+  MAPS_DOBOJ: "https://maps.app.goo.gl/HxAT6NqMrprqYhbw8",
+  SERVICES: [
+    { num: "01", tiers: true, name: "ŠIŠANJE", desc: "Klasično šišanje prilagođeno obliku lica.", d1: "30 MIN", p1: "14 KM", d2: "30 MIN", p2: "22 KM", d3: "40 MIN", p3: "26 KM" },
+    { num: "02", tiers: true, name: "BRADA · UREĐIVANJE", desc: "Oblikovanje i konturisanje brade.", d1: "15 MIN", p1: "8 KM", d2: "15 MIN", p2: "12 KM", d3: "20 MIN", p3: "14 KM" },
+    { num: "03", tiers: true, name: "ŠIŠANJE I BRADA", desc: "Kompletan tretman u jednom terminu.", d1: "45 MIN", p1: "20 KM", d2: "45 MIN", p2: "26 KM", d3: "40 MIN", p3: "31 KM" },
+    { num: "04", tiers: true, name: "LA VUJKE SET", desc: "Naš kompletan paket, od šišanja do finiša.", d1: "60 MIN", p1: "31 KM", d2: "60 MIN", p2: "36 KM", d3: "60 MIN", p3: "38 KM" },
+    { num: "05", tiers: true, name: "KREATIVNO ŠIŠANJE", desc: "Dizajn, linije i ideja koja se pamti.", d1: "60 MIN", p1: "29 KM", d2: "60 MIN", p2: "32 KM", d3: "", p3: "—" },
+    { num: "06", tiers: true, name: "DEPILACIJA VOSKOM", desc: "Voskom, precizno i brzo.", d1: "15 MIN", p1: "8 KM", d2: "15 MIN", p2: "8 KM", d3: "", p3: "—" },
+    { num: "07", tiers: true, name: "ŠIŠANJE I DEPILACIJA", desc: "Šišanje plus depilacija voskom, u jednom terminu.", d1: "45 MIN", p1: "22 KM", d2: "45 MIN", p2: "30 KM", d3: "", p3: "—" },
+    { num: "08", tiers: true, name: "STAJLING FRIZURE", desc: "Priprema i finiš za izlazak ili event.", d1: "", p1: "—", d2: "15 MIN", p2: "8 KM", d3: "", p3: "—" },
+    { num: "09", tiers: true, name: "DJEČIJE ŠIŠANJE", desc: "Za najmlađe, do 7 godina · bez stresa.", d1: "", p1: "—", d2: "20 MIN", p2: "16 KM", d3: "", p3: "—" },
+    { num: "10", name: "PLETENICE · BRAIDS", desc: "Ukupna cijena zavisi od broja pletenica. Nakon rezervacije kontaktiramo te radi dogovora o frizuri, vremenu izrade i konačnoj cijeni. 5 KM po pletenici.", single: true, tiers: false, note: "", d1: "60 MIN", p1: "5 — 100 KM", d2: " MIN", p2: " KM", d3: "", p3: "—" }
+  ],
+  REVIEWS: [
+    { stars: "★ ★ ★ ★ ★", text: "Frizerski salon u koji se s poverenjem vraćam. Ljubazno osoblje, moderan pristup i besprekoran rezultat svaki put.", name: "ZORAN N.", meta: "DOBOJ · GOOGLE" },
+    { stars: "★ ★ ★ ★ ★", text: "Vrhunska usluga, mlada ekipa, samo pohvale. Preporučujem!", name: "ALEKSANDAR K.", meta: "DOBOJ · GOOGLE" },
+    { stars: "★ ★ ★ ★ ★", text: "Poštovanje prema mušteriji i odličan rad. Ovo je najbolja frizura koju sam ikad imao.", name: "MILOŠ T.", meta: "DERVENTA · GOOGLE" },
+    { stars: "★ ★ ★ ★ ★", text: "Došao sam bez ideje šta hoću i izašao sa frizurom koja mi stoji. Nisam morao ništa objašnjavati.", name: "NEMANJA S.", meta: "BROD · GOOGLE" },
+    { stars: "★ ★ ★ ★ ★", text: "Veoma zadovoljan uslugom, sigurno ću se vratiti ponovo.", name: "BOJAN L.", meta: "DERVENTA · GOOGLE" },
+    { stars: "★ ★ ★ ★ ★", text: "Nisam čekao ni minutu, a nisu ni žurili sa mnom. To mi je najviše ostalo.", name: "SAŠA J.", meta: "DOBOJ · GOOGLE" }
+  ],
+  LOCATIONS: [
+    { num: "01", city: "DOBOJ", address: "Cara Dušana bb, 74000 Doboj", phone: "065 210 982", h1: "09:00–17:00", h2: "09:00–15:00", maps: "https://maps.app.goo.gl/HxAT6NqMrprqYhbw8", mapsLabel: "OTVORI U MAPAMA →" },
+    { num: "02", city: "DERVENTA", address: "Trive Vujića 18, 74400 Derventa", phone: "065 210 982", h1: "09:00–21:00", h2: "10:00–14:30", maps: "https://maps.app.goo.gl/ApxhdK9mwkwyXaaB6", mapsLabel: "OTVORI U MAPAMA →" },
+    { num: "03", city: "BROD", address: "Svetog Save 27, 74450 Brod", phone: "065 210 982", h1: "09:00–17:00", h2: "09:00–15:00", maps: "https://maps.app.goo.gl/R2wfBqqeY1WtU9Vj7", mapsLabel: "OTVORI U MAPAMA →" }
+  ]
+};
+
+class Component extends DCLogic {
+  state = {
+    vi: {},
+    menuOpen: false,
+    bookOpen: false,
+    w: typeof window !== "undefined" ? window.innerWidth : 1440,
+    scrolled: false,
+    crew: "",
+    zoom: 0
+  };
+
+  works = [
+    ["LOW TAPER", "Taper fade · Teksturirani vrh"],
+    ["MID FADE", "Čist prelaz · Definisana kontura"],
+    ["SKIN FADE", "Do kože · Oštra linija"],
+    ["BRADA", "Oblikovanje · Britva i topli peškir"],
+    ["CREW CUT", "Kratko · Muževno · Bez održavanja"],
+    ["TEXTURED CROP", "Teksturirani vrh · Blago tapered"],
+    ["BUZZ CUT", "Jedna dužina · Precizna kontura"],
+    ["KREATIVNO ŠIŠANJE", "Dizajn · Linije · Vlastita ideja"],
+    ["ŠIŠANJE + BRADA", "Kompletna transformacija"],
+    ["STAJLING", "Finiš za event · Drži cijeli dan"]
+  ];
+
+  openZoom(n) {
+    this.setState({ zoom: n, zoomSrc: this.slotUrl(n) }, () => this.paintZoom());
+  }
+
+  paintZoom() {
+    const img = document.querySelector('[data-zoom-img="1"]');
+    if (!img) return;
+    const url = this.state.zoomSrc;
+    if (url) img.src = url;
+    else img.removeAttribute("src");
+  }
+
+  componentDidUpdate() {
+    if (this.state.zoom) this.paintZoom();
+  }
+
+  slotUrl(n) {
+    const card = document.querySelector('[data-card="' + String(n).padStart(2, "0") + '"] image-slot');
+    if (!card) return "";
+    if (card.shadowRoot) {
+      const inner = card.shadowRoot.querySelector("img[src]");
+      if (inner && inner.src) return inner.src;
+    }
+    return card.getAttribute("src") || "";
+  }
+
+  componentDidMount() {
+    document.documentElement.dataset.js = "1";
+    requestAnimationFrame(() => { this.startRail(); this.startLookbook(); });
+    this.io = new IntersectionObserver(
+      (entries) => entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add("in"); this.io.unobserve(e.target); }
+      }),
+      { threshold: 0.14, rootMargin: "0px 0px -6% 0px" }
+    );
+    this.scan();
+    this.mo = new MutationObserver(() => {
+      if (this.queued) return;
+      this.queued = true;
+      requestAnimationFrame(() => { this.queued = false; this.scan(); this.startRail(); this.startLookbook(); });
+    });
+    this.mo.observe(document.body, { childList: true, subtree: true });
+
+    this.onScroll = () => {
+      const y = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      const s = y > 520;
+      if (s !== this.state.scrolled) this.setState({ scrolled: s });
+    };
+    document.addEventListener("scroll", this.onScroll, { passive: true, capture: true });
+    this.onResize = () => {
+      this.measureRail();
+      if (window.innerWidth !== this.state.w) this.setState({ w: window.innerWidth });
+    };
+    this.onKey = (e) => {
+      if (e.key === "Escape") this.setState({ bookOpen: false, menuOpen: false, zoom: 0 });
+    };
+    window.addEventListener("scroll", this.onScroll, { passive: true });
+    window.addEventListener("resize", this.onResize);
+    window.addEventListener("keydown", this.onKey);
+    this.safety = setTimeout(() => {
+      document.querySelectorAll("[data-reveal],[data-reveal-img],[data-rule]").forEach((n) => n.classList.add("in"));
+    }, 5000);
+  }
+
+  componentWillUnmount() {
+    if (this.raf) cancelAnimationFrame(this.raf);
+    if (this.railIo) this.railIo.disconnect();
+    if (this.io) this.io.disconnect();
+    if (this.mo) this.mo.disconnect();
+    clearTimeout(this.safety);
+    if (this.lbWatch) clearInterval(this.lbWatch);
+    if (this.onLbResize) window.removeEventListener("resize", this.onLbResize);
+    window.removeEventListener("scroll", this.onScroll);
+    document.removeEventListener("scroll", this.onScroll, { capture: true });
+    window.removeEventListener("resize", this.onResize);
+    window.removeEventListener("keydown", this.onKey);
+  }
+
+  scan() {
+    if (!this.io) return;
+    document.querySelectorAll("[data-reveal]:not([data-seen]),[data-reveal-img]:not([data-seen]),[data-rule]:not([data-seen])").forEach((n) => {
+      n.setAttribute("data-seen", "1");
+      this.io.observe(n);
+    });
+  }
+
+  isMobile() { return this.state.w < 960; }
+
+  buildProducts() {
+    const DATA = [
+      { key: "balzam", cat: "BRADA", name: "Balzam za njegu i stajling brade", variants: [
+        { slot: "pr-balzam-energetic", label: "ENERGETIC", desc: "Menta. Svježina koja pokrene dan." },
+        { slot: "pr-balzam-loyalty", label: "LOYALTY", desc: "Lavanda. Njega kojoj se vraćaš." }
+      ] },
+      { key: "ulje", cat: "BRADA", name: "Ulje za bradu", variants: [
+        { slot: "pr-ulje-energetic", label: "ENERGETIC", desc: "Menta. Svježina i energija." },
+        { slot: "pr-ulje-loyalty", label: "LOYALTY", desc: "Lavanda. Dubinski njeguje kožu." }
+      ] },
+      { key: "vosak", cat: "STYLING", name: "Vosak za bradu", variants: [
+        { slot: "pr-vosak-macho", label: "MACHO", desc: "Oblikuj stil koji ostavlja utisak." }
+      ] },
+      { key: "krema", cat: "LICE", name: "Krema za njegu lica", variants: [
+        { slot: "pr-krema-protective", label: "PROTECTIVE STYLE", desc: "Hidratacija, zaštita i njega u jednom koraku." }
+      ] }
+    ];
+    const vi = this.state.vi || {};
+    return DATA.map((p) => {
+      const i = (vi[p.key] || 0) % p.variants.length;
+      const active = p.variants[i];
+      return {
+        cat: p.cat,
+        name: p.name,
+        variant: active.label,
+        desc: active.desc,
+        multi: p.variants.length > 1,
+        slots: p.variants.map((v, k) => ({ slotId: v.slot, ph: p.name + " · " + v.label, op: k === i ? 1 : 0 })),
+        prev: () => this.stepVariant(p.key, -1, p.variants.length),
+        next: () => this.stepVariant(p.key, 1, p.variants.length)
+      };
+    });
+  }
+
+  stepVariant(key, dir, len) {
+    this.setState((s) => {
+      const vi = Object.assign({}, s.vi);
+      vi[key] = ((vi[key] || 0) + dir + len) % len;
+      return { vi: vi };
+    });
+  }
+
+  startLookbook = () => {
+    const track = document.querySelector('[data-track="1"]');
+    const counter = document.querySelector('[data-counter="1"]');
+    if (!track || !track.querySelector("[data-card]")) {
+      if ((this.lbTries = (this.lbTries || 0) + 1) < 600) requestAnimationFrame(this.startLookbook);
+      return;
+    }
+    if (!this.lbWatch) {
+      let n = 0;
+      this.lbWatch = setInterval(() => {
+        if (++n > 40) { clearInterval(this.lbWatch); this.lbWatch = 0; return; }
+        const live = document.querySelector('[data-track="1"]');
+        if (live && (live !== this.lbTrack || !this.lbCards || !this.lbCards.length || !this.lbCards[0].isConnected)) this.startLookbook();
+      }, 400);
+    }
+    if (this.lbTrack === track && this.lbCards && this.lbCards.length && this.lbCards[0].isConnected) return;
+    this.lbTrack = track;
+    this.lbCounter = counter || null;
+    this.lbCards = Array.prototype.slice.call(track.querySelectorAll("[data-card]"));
+    this.lbReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    this.lbActive = 0;
+    this.applyLbMode();
+    this.bindLbPanels();
+  };
+
+  applyLbMode() {
+    const track = this.lbTrack;
+    if (!track) return;
+    const desktop = window.matchMedia("(hover: hover)").matches && window.innerWidth >= 960;
+    this.lbDesktop = desktop;
+    const hint = document.querySelector('[data-hint="1"]');
+    if (hint) hint.textContent = desktop ? "PREĐI MIŠEM DA OTKRIJEŠ" : "PREVUCI ZA VIŠE RADOVA";
+    track.style.overflowX = desktop ? "hidden" : "auto";
+    this.lbCards.forEach((el, i) => {
+      el.style.flex = desktop ? "1 1 0%" : "0 0 min(78vw, 340px)";
+      el.style.scrollSnapAlign = desktop ? "" : "start";
+    });
+    if (desktop) this.setLbActive(this.lbActive || 0, true);
+    else this.lbCards.forEach((el) => { el.style.flexGrow = ""; this.paintPanel(el, true); });
+    this.syncLbCounter();
+  }
+
+  paintPanel(el, open) {
+    const media = el.querySelector('[data-media="1"]');
+    const veil = el.querySelector('[data-veil="1"]');
+    const meta = el.querySelector('[data-meta="1"]');
+    const vlabel = el.querySelector('[data-vlabel="1"]');
+    const num = el.querySelector('[data-num="1"]');
+    const narrow = this.lbDesktop && !open;
+    media.style.filter = open ? "grayscale(0) contrast(1) brightness(1)" : "grayscale(1) contrast(1.05) brightness(" + (narrow ? ".72" : ".82") + ")";
+    veil.style.opacity = open ? ".78" : narrow ? ".95" : ".9";
+    meta.style.opacity = open ? "1" : "0";
+    meta.style.transform = open ? "translateY(0)" : "translateY(12px)";
+    if (vlabel) vlabel.style.opacity = narrow ? "1" : "0";
+    if (num) num.style.color = open ? "#f97300" : "#e7e7e5";
+  }
+
+  setLbActive(i, force) {
+    if (!this.lbDesktop) return;
+    if (!force && this.lbActive === i) return;
+    this.lbActive = i;
+    this.lbCards.forEach((el, k) => {
+      el.style.flexGrow = k === i ? "6.4" : "1";
+      this.paintPanel(el, k === i);
+    });
+    this.syncLbCounter();
+  }
+
+  syncLbCounter() {
+    const counter = this.lbCounter || document.querySelector('[data-counter="1"]');
+    if (!counter || !this.lbCards || !this.lbCards.length) return;
+    let idx = this.lbActive || 0;
+    if (!this.lbDesktop) {
+      const track = this.lbTrack;
+      const max = track.scrollWidth - track.clientWidth;
+      const step = this.lbCards[1] ? this.lbCards[1].offsetLeft - this.lbCards[0].offsetLeft : this.lbCards[0].offsetWidth;
+      idx = max - track.scrollLeft <= 1
+        ? this.lbCards.length - 1
+        : Math.max(0, Math.min(this.lbCards.length - 1, Math.round(track.scrollLeft / step)));
+    }
+    const label = this.lbCards[idx].getAttribute("data-card");
+    if (counter.textContent === label) return;
+    counter.style.opacity = "0";
+    clearTimeout(this.lbCountT);
+    this.lbCountT = setTimeout(() => { counter.textContent = label; counter.style.opacity = "1"; }, 120);
+  }
+
+  bindLbPanels() {
+    const track = this.lbTrack;
+    if (track.dataset.lbBound === "1") return;
+    track.dataset.lbBound = "1";
+    const cursor = document.querySelector('[data-cursor="1"]');
+    this.lbCards.forEach((el, i) => {
+      el.addEventListener("mouseenter", () => this.setLbActive(i));
+      el.addEventListener("focus", () => this.setLbActive(i));
+    });
+    let raf = 0;
+    track.addEventListener("scroll", () => {
+      if (this.lbDesktop || raf) return;
+      raf = requestAnimationFrame(() => { raf = 0; this.syncLbCounter(); });
+    }, { passive: true });
+    track.addEventListener("pointermove", (e) => {
+      if (!cursor || !this.lbDesktop) return;
+      cursor.style.display = "flex";
+      cursor.style.transform = "translate3d(" + (e.clientX + 16) + "px," + (e.clientY - 18) + "px,0)";
+    });
+    track.addEventListener("mouseleave", () => { if (cursor) cursor.style.display = "none"; });
+    if (!this.onLbResize) {
+      this.onLbResize = () => {
+        clearTimeout(this.lbResizeT);
+        this.lbResizeT = setTimeout(() => this.applyLbMode(), 160);
+      };
+      window.addEventListener("resize", this.onLbResize);
+    }
+  }
+
+  nudgeShot(dir) {
+    const track = this.lbTrack || document.querySelector('[data-track="1"]');
+    if (!track || !this.lbCards) return;
+    if (this.lbDesktop) {
+      this.setLbActive(Math.max(0, Math.min(this.lbCards.length - 1, (this.lbActive || 0) + dir)));
+      return;
+    }
+    const step = this.lbCards[1] ? this.lbCards[1].offsetLeft - this.lbCards[0].offsetLeft : this.lbCards[0].offsetWidth;
+    const max = track.scrollWidth - track.clientWidth;
+    const to = Math.max(0, Math.min(max, track.scrollLeft + step * dir));
+    if (this.lbReduced) { track.scrollLeft = to; return; }
+    const from = track.scrollLeft, t0 = performance.now(), dur = 420;
+    const snap = track.style.scrollSnapType;
+    track.style.scrollSnapType = "none";
+    if (this.shotRaf) cancelAnimationFrame(this.shotRaf);
+    const tick = (now) => {
+      const p = Math.min(1, (now - t0) / dur);
+      track.scrollLeft = from + (to - from) * (1 - Math.pow(1 - p, 3));
+      if (p < 1) this.shotRaf = requestAnimationFrame(tick);
+      else { this.shotRaf = 0; track.style.scrollSnapType = snap; }
+    };
+    this.shotRaf = requestAnimationFrame(tick);
+  }
+
+  railTick = () => {
+    const t = this.track && this.track.isConnected ? this.track : (this.track = document.querySelector('[data-rail-track="1"]'));
+    if (!t || !this.railVisible) { this.raf = requestAnimationFrame(this.railTick); return; }
+    if (!this.railPaused && !this.reduced) {
+      this.railX += 0.4;
+      if (this.railHalf > 0 && this.railX >= this.railHalf) this.railX -= this.railHalf;
+    }
+    if (this.railPending) {
+      const d = this.railPending * 0.14;
+      this.railX += d;
+      this.railPending -= d;
+      if (Math.abs(this.railPending) < 0.4) this.railPending = 0;
+      if (this.railHalf > 0) {
+        if (this.railX >= this.railHalf) this.railX -= this.railHalf;
+        if (this.railX < 0) this.railX += this.railHalf;
+      }
+    }
+    t.style.transform = "translate3d(" + -this.railX.toFixed(2) + "px,0,0)";
+    this.raf = requestAnimationFrame(this.railTick);
+  };
+
+  measureRail() {
+    if (!this.track || !this.track.isConnected) this.track = document.querySelector('[data-rail-track="1"]');
+    if (this.track) this.railHalf = this.track.scrollWidth / 2;
+  }
+
+  startRail = () => {
+    const host = document.querySelector('[data-rail="1"]');
+    if (!host) {
+      if ((this.railTries = (this.railTries || 0) + 1) < 400) requestAnimationFrame(this.startRail);
+      return;
+    }
+    if (this.railHost === host) return;
+    if (this.railIo) this.railIo.disconnect();
+    this.railHost = host;
+    this.track = null;
+    this.reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    this.railX = 0;
+    this.railPending = 0;
+    this.railVisible = false;
+    this.measureRail();
+    this.railIo = new IntersectionObserver((es) => {
+      const vis = es.some((e) => e.isIntersecting);
+      if (vis === this.railVisible) return;
+      this.railVisible = vis;
+      if (vis) {
+        this.measureRail();
+        if (!this.raf) this.raf = requestAnimationFrame(this.railTick);
+      }
+    }, { rootMargin: "120px 0px" });
+    this.railIo.observe(host);
+    if (!this.raf) this.raf = requestAnimationFrame(this.railTick);
+  };
+
+  nudgeRail(dir) {
+    this.measureRail();
+    const host = document.querySelector('[data-rail="1"]');
+    const step = Math.min(360, (host ? host.clientWidth : 320) * 0.9);
+    this.railPending += dir * step;
+    this.railVisible = true;
+    if (!this.raf) this.raf = requestAnimationFrame(this.railTick);
+  }
+
+
+  renderVals() {
+    const mobile = this.isMobile();
+    const storeUrl = CFG.BOOKING_URL;
+
+    return {
+      pato: CFG.PATO,
+      products: this.buildProducts(),
+      services: CFG.SERVICES,
+      locations: CFG.LOCATIONS,
+      phone: CFG.PHONE,
+      phoneHref: CFG.PHONE_HREF,
+      instagram: CFG.INSTAGRAM,
+      mapsDoboj: CFG.MAPS_DOBOJ,
+      reviews: CFG.REVIEWS.concat(CFG.REVIEWS),
+      pauseRail: () => { this.railPaused = true; },
+      resumeRail: () => { this.railPaused = false; },
+      prevShot: () => this.nudgeShot(-1),
+      nextShot: () => this.nudgeShot(1),
+      prevReview: () => this.nudgeRail(-1),
+      nextReview: () => this.nudgeRail(1),
+      playUrl: CFG.GOOGLE_PLAY_URL,
+      appStoreUrl: CFG.APP_STORE_URL,
+      storeUrl: storeUrl,
+      isMobile: mobile,
+      isDesktop: !mobile,
+      crewDoboj: this.state.crew === "DOBOJ",
+      crewDerventa: this.state.crew === "DERVENTA",
+      crewBrod: this.state.crew === "BROD",
+      crewTabs: true,
+      zoomOpen: !!this.state.zoom,
+      zoomTitle: this.state.zoom ? this.works[this.state.zoom - 1][0] : "",
+      zoomSub: this.state.zoom ? this.works[this.state.zoom - 1][1] : "",
+      closeZoom: () => this.setState({ zoom: 0 }),
+      zoom1: () => this.openZoom(1),
+      zoom2: () => this.openZoom(2),
+      zoom3: () => this.openZoom(3),
+      zoom4: () => this.openZoom(4),
+      zoom5: () => this.openZoom(5),
+      zoom6: () => this.openZoom(6),
+      zoom7: () => this.openZoom(7),
+      zoom8: () => this.openZoom(8),
+      zoom9: () => this.openZoom(9),
+      zoom10: () => this.openZoom(10),
+      signDoboj: this.state.crew === "DOBOJ" ? "−" : "+",
+      signDerventa: this.state.crew === "DERVENTA" ? "−" : "+",
+      signBrod: this.state.crew === "BROD" ? "−" : "+",
+      openDoboj: () => this.setState((s) => ({ crew: s.crew === "DOBOJ" ? "" : "DOBOJ" })),
+      openDerventa: () => this.setState((s) => ({ crew: s.crew === "DERVENTA" ? "" : "DERVENTA" })),
+      openBrod: () => this.setState((s) => ({ crew: s.crew === "BROD" ? "" : "BROD" })),
+      menuOpen: this.state.menuOpen,
+      bookOpen: this.state.bookOpen,
+      showBar: mobile && this.state.scrolled && (this.props.showStickyBar !== false),
+      toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      closeBook: () => this.setState({ bookOpen: false }),
+      book: (e) => {
+        if (this.isMobile()) return;
+        if (e && e.preventDefault) e.preventDefault();
+        this.setState({ bookOpen: true, menuOpen: false });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
